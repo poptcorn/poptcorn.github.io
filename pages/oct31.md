@@ -84,7 +84,9 @@ themoviedb.org | python.org | numpy.org | matplotlib.org
 
 ---
 ---
-Personal notes: This is my first time using data of this nature queried from an API, usually I use very curated tabular data in CSV/FITS formats queried from SQL/ADQL databases with string, integer and float values. These data are served as a list of dictionaries which contain strings, floats, integers, lists, dictionaries -- so my first attempts to incorporate them into my usual Numpy array structures were largely frustrated. Pandas seemed to handle it well (for a while I was saving the data as a pickled Pandas dataframe, then reading it in and directly converting to a Numpy record as a workaround to FITS not handling unicode), but I'm used to operating in Numpy and the Pandas dataframes react unexpectedly to my usual Numpy array operations, one example: I now (as of post 2) know I need to do:
+### Personal notes:
+
+This is my first time using data of this nature queried from an API, usually I use very curated tabular data in CSV/FITS formats queried from SQL/ADQL databases with string, integer and float values. These data are served as a list of dictionaries which contain strings, floats, integers, lists, dictionaries -- so my first attempts to incorporate them into my usual Numpy array structures were largely frustrated. Pandas seemed to handle it well (for a while I was saving the data as a pickled Pandas dataframe, then reading it in and directly converting to a Numpy record as a workaround to FITS not handling unicode), but I'm used to operating in Numpy and the Pandas dataframes react unexpectedly to my usual Numpy array operations, one example: I now (as of post 2) know I need to do:
 
 ```python
 [a for a in df.iterrows() if 'Woody Allen' in a[1].directors]
