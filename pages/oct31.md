@@ -78,3 +78,27 @@ I’d like to thank the themoviedb.org folks, who gave me access to their API wh
 
 themoviedb.org | python.org | numpy.org | matplotlib.org
 ![average vote by year](../assets/credit/tmdb.png) | ![average vote by year](../assets/credit/python.png) | ![average vote by year](../assets/credit/numpy.png) | ![average vote by year](../assets/credit/mpl.png)
+
+
+---
+---
+Personal notes: This is my first time using data of this nature queried from an API, usually I use very curated tabular data in CSV/FITS formats queried from SQL/ADQL databases with string, integer and float values. These data are served as a list of dictionaries which contain strings, floats, integers, lists, dictionaries -- so my first attempts to incorporate them into my usual Numpy array structures were largely frustrated. Pandas seemed to handle it well (for a while I was saving the data as a pickled Pandas dataframe, then reading it in and directly converting to a Numpy record as a workaround to FITS not handling unicode), but I'm used to operating in Numpy and the Pandas dataframes react unexpectedly to my usual Numpy array operations, for example I now (as of post 2) know I need to do:
+
+```python
+[a for a in df.iterrows() if 'Woody Allen' in a[1].directors]
+```
+where my naive array attempt:
+```python
+[a for a in df if 'Woody Allen' in a.directors]
+```
+returns:
+```python
+AttributeError: 'str' object has no attribute 'directors'
+```
+which just leaves me asking when I was passing a string? I thought I was passing a row? I spent a ton of time headbashing about how to loop through the dataframes before discovering iterrows (in the next post, this one I just ignored it and hacked out some workarounds).
+
+For this post I largely just avoided this issue out of annoyance because it took several days to just get the data and figure out why I couldn't write it to a FITs to graphically explore in the table exploring tool Topcat (including a long foray into unicode to string errors) ... and after an afternoon straight of just trying to get a histogram, it's hard to add another annoyance so I just did it quick and dirty. I will focus on using Pandas more in future posts, since it seems to address some problems I didn't know existed.
+
+Creating this website is also is essentially my first experience with a personal website beyond point and click wordpressy stuff, and git, which I have little motivation to use in my normal workflow. Also, after bumbling around with online gif creators which would require too quick frame flips or too few frames, I discovered imagemagick was the tool to use for that. Additional difficulties arise from my internet situation, which seems to limit my query rate to a movie every 4 seconds, which makes downloading the entire database... tedious.
+
+Hopefully in the future I can spend more time on cool stuff and less time on beating data with a hammer to make things "kinda" work.
