@@ -95,7 +95,7 @@ returns:
 ```python
 AttributeError: 'str' object has no attribute 'directors'
 ```
-which just leaves me asking when I was passing a string? I thought I was passing a row? I spent a ton of time headbashing about how to loop through the dataframes before discovering iterrows (in the next post, this one I just ignored it and hacked out some workarounds).
+which just leaves me asking when I was passing a string? I thought I was passing a row? I spent a ton of time headbashing about how to loop through the dataframes before discovering iterrow.
 
 For this post I largely just avoided this issue out of annoyance because it took several days to just get the data and figure out why I couldn't write it to a FITs to graphically explore in the table exploring tool Topcat (including a long foray into unicode to string errors) ... and after an afternoon straight of just trying to get a histogram, it's hard to add another annoyance so I just did it quick and dirty. I will focus on using Pandas more in future posts, since it seems to address some problems I didn't know existed.
 
