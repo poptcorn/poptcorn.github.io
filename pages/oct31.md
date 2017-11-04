@@ -71,8 +71,6 @@ aj_guy3181 on IMDb had this to say about The Star Wars Holiday Special: *“The 
 
 I guess I know what I’m watching this weekend.
 
-
-### End of post, be excellent to each other.
 ---
 ---
 
