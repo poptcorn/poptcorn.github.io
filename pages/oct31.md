@@ -27,7 +27,7 @@ This seems about right, the more “cultured” things like Music, Documentary, 
 
 Something cool to look at is the popularity of genres as a function of year:
 
-![popularity gif](../assets/oct31/animated_small.gif)
+![popularity gif](../assets/oct31/animated.gif)
 
 I went ahead and smoothed this with a decade-wide window and I saw a few things that were interesting, but not entirely unexpected, certain genres have fairly constant popularity, like Action and Comedy, while other genres…
 
