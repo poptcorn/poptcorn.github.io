@@ -24,12 +24,12 @@ Now, the fun part. Specific actors loved by specific directors for their ability
 
 Here is the network chart with colors representing total connections, and bubble-size representing total *incoming* connections (ie. acting in a movie makes the bubble bigger).
 
-![actor web](../assets/apr28/actor_web2.pdf)
+![actor web](../assets/apr28/actor_web2.png)
 
 
 And the same thing with *outgoing* connections increasing node-size:
 
-![director web](../assets/apr28/director_web2.pdf)
+![director web](../assets/apr28/director_web2.png)
 
 
 I was hoping to see a kind of pattern with different eras separated into blobs, and different localities in blobs (like a blob for Bollywood, and a blob for Japanese cinema). But since I've just amputated 99% of the data to make it legible and calculable, that geography doesn't exist (also, see the prior post about lacking huge amounts of pre-1970s data). I *may* do a longrun on my work deck over some break to see if I can get this kind of picture, but that's not really possible soon since it's busy with actual work at the moment.
