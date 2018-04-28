@@ -36,9 +36,13 @@ I was hoping to see a kind of pattern with different eras separated into blobs, 
 
 Anyways, I just explored these by eye, and saw some strong connections, tabulated below:
 
-![deniro](../assets/apr28/deniro/deniro.jpg){: height=36 width=36} | ![taxi driver (1976)](../assets/apr28/deniro/taxi76.jpg) | ![scorsese](../assets/apr28/deniro/scorsese.jpg)
+Robert De Niro | | Martin Scorsese
+![deniro](../assets/apr28/deniro/deniro.jpg) | ![taxi driver (1976)](../assets/apr28/deniro/taxi76.jpg) | ![scorsese](../assets/apr28/deniro/scorsese.jpg)
+Johnny Depp | | Tim Burton
 ![depp](../assets/apr28/depp/depp.jpg) | ![edward scissorhands (1990)](../assets/apr28/depp/scissorhands90.jpg) | ![burton](../assets/apr28/depp/burton.jpg)
+Tom Hanks | | Steven Spielberg
 ![hanks](../assets/apr28/hanks/hanks.jpg) | ![saving private ryan (1998)](../assets/apr28/hanks/ryan98.jpg) | ![spielberg](../assets/apr28/hanks/spielberg.jpg)
+John Wayne | | John Ford
 ![wayne](../assets/apr28/wayne/wayne.jpg) | ![the searchers (1956)](../assets/apr28/wayne/searchers56.jpg) | ![ford](../assets/apr28/wayne/ford.jpg)
 
 ---
