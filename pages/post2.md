@@ -3,7 +3,7 @@ Best Friends
 
 Okay, we've increased our data set from the last post to all movies with more than 10 ratings (down from 50) to a sample of 23,000 movies (up from 9,000). The reason I'm not just pulling everything is that each individual movie query takes me about 4 seconds for some reason. I'm sure there's a better way, but I'll get to it in the future.
 
-Today, I wanted to look at actor-director "best friends." Like in my mind, when I think Quentin Tarantino, I think Samuel L Jackson. Or when I think of Timp Burton, I see Johnny Depp. Last time we looked at genre, year and rating, this time we'll just look at the variables actors and directors.
+Today, I wanted to look at actor-director "best friends." Like in my mind, when I think Quentin Tarantino, I think Samuel L Jackson. Or when I think of Tim Burton, I see Johnny Depp. Last time we looked at genre, year and rating, this time we'll just look at the variables actors and directors.
 
 So first of all, let's look at a simple distribution of our data. First, let's see how many movies actors usually appear in:
 
