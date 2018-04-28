@@ -4,7 +4,7 @@ Today, I wanted to look at actor-director "best friends." Like in my mind, when 
 
 So first of all, let's look at a simple distribution of our data. First, let's see how many movies actors usually appear in:
 
-![actors by films](../assets/apr28/actors.png)
+![actors by films](../assets/post2/actors.png)
 
 So, to me, I see two regimes: a slowing drop up to acting in 20 movies, then a linear drop after that. If you are in one movie, a portion of actors will get a part in a second movie, if you are in two, a higher portion will get a third, if you are in three a higher percentage will get a fourth... etc, so actors get their foot in the door and it gets relatively easier and easier to get into more movies (note this is log-scaled)... up to 20 movies. At 20 movies, this looks pretty log-linear, so my interpretation is that at 20 movies, you are an established pro, and at that point it's just a matter of how much time you spend acting. This is 100% guessing.
 
@@ -16,7 +16,7 @@ If you need some inhuman voicing that's suitable for children's movies, this you
 
 Let's do the same thing with directors:
 
-![directors by films](../assets/apr28/directors.png)
+![directors by films](../assets/post2/directors.png)
 
 Immediately we notice that directors do less movies than actors. *Way* less. Some of my favorite directors don't do many at all, like Stanley Kubrick with 16 films and Quentin Tarantino with 17 (and some weird CSI episodes / movie). Something interesting about these top two most prolific directors is that they love to self-cast, Hitchcock (left) does small cameos (like the meta-scene in *Vertigo* [1958] where he walks across the screen directly before the scene where the movie plot and psychological manipulation of the protagonist is revealed), while Woody Allen (right) likes to take main roles (*Annie Hall* [1977], *Manhattan* [1979]).
 
@@ -24,12 +24,12 @@ Now, the fun part. Specific actors loved by specific directors for their ability
 
 Here is the network chart with colors representing total connections, and bubble-size representing total *incoming* connections (ie. acting in a movie makes the bubble bigger).
 
-![actor web](../assets/apr28/actor_web2.png)
+![actor web](../assets/post2/actor_web2.png)
 
 
 And the same thing with *outgoing* connections increasing node-size:
 
-![director web](../assets/apr28/director_web2.png)
+![director web](../assets/post2/director_web2.png)
 
 
 I was hoping to see a kind of pattern with different eras separated into blobs, and different localities in blobs (like a blob for Bollywood, and a blob for Japanese cinema). But since I've just amputated 99% of the data to make it legible and calculable, that geography doesn't exist (also, see the prior post about lacking huge amounts of pre-1970s data). I *may* do a longrun on my work deck over some break to see if I can get this kind of picture, but that's not really possible soon since it's busy with actual work at the moment.
@@ -37,13 +37,13 @@ I was hoping to see a kind of pattern with different eras separated into blobs, 
 Anyways, I just explored these by eye, and saw some strong connections, tabulated below:
 
 Robert De Niro | | Martin Scorsese
-![deniro](../assets/apr28/deniro/deniro.jpg) | ![taxi driver (1976)](../assets/apr28/deniro/taxi76.jpg) | ![scorsese](../assets/apr28/deniro/scorsese.jpg)
+![deniro](../assets/post2/deniro/deniro.jpg) | ![taxi driver (1976)](../assets/post2/deniro/taxi76.jpg) | ![scorsese](../assets/post2/deniro/scorsese.jpg)
 Johnny Depp | | Tim Burton
-![depp](../assets/apr28/depp/depp.jpg) | ![edward scissorhands (1990)](../assets/apr28/depp/scissorhands90.jpg) | ![burton](../assets/apr28/depp/burton.jpg)
+![depp](../assets/post2/depp/depp.jpg) | ![edward scissorhands (1990)](../assets/post2/depp/scissorhands90.jpg) | ![burton](../assets/post2/depp/burton.jpg)
 Tom Hanks | | Steven Spielberg
-![hanks](../assets/apr28/hanks/hanks.jpg) | ![saving private ryan (1998)](../assets/apr28/hanks/ryan98.jpg) | ![spielberg](../assets/apr28/hanks/spielberg.jpg)
+![hanks](../assets/post2/hanks/hanks.jpg) | ![saving private ryan (1998)](../assets/post2/hanks/ryan98.jpg) | ![spielberg](../assets/post2/hanks/spielberg.jpg)
 John Wayne | | John Ford
-![wayne](../assets/apr28/wayne/wayne.jpg) | ![the searchers (1956)](../assets/apr28/wayne/searchers56.jpg) | ![ford](../assets/apr28/wayne/ford.jpg)
+![wayne](../assets/post2/wayne/wayne.jpg) | ![the searchers (1956)](../assets/post2/wayne/searchers56.jpg) | ![ford](../assets/post2/wayne/ford.jpg)
 
 ---
 ---
