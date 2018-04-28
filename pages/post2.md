@@ -54,6 +54,7 @@ John Wayne | | John Ford
 ![wayne](../assets/post2/wayne/wayne.jpg) | ![the searchers (1956)](../assets/post2/wayne/searchers56.jpg) | ![ford](../assets/post2/wayne/ford.jpg)
 
 Is it just me, or do a lot of directors' favorite actors look suspiciously like themselves?
+
 ---
 ---
 I’d like to thank the themoviedb.org folks, who gave me access to their API which was relatively painless to use. I am not affiliated with them in any way and my opinions are my own. I’d also like to thank the developers and maintainers of: Python, Gephi, and matplotlib.
