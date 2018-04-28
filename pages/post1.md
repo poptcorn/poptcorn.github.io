@@ -1,4 +1,5 @@
-#Genres
+Genres
+---
 
 *Genre – a class or category of artistic endeavor having a particular form, content, technique, or the like:*
 
