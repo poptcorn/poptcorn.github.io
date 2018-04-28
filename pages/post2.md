@@ -22,7 +22,6 @@ Immediately we notice that directors do less movies than actors. *Way* less. Som
 
 Now, the fun part. Specific actors loved by specific directors for their ability to convey their unique filmatic messages. Side note, I quickly found out that Clint Eastwood's favorite actor is science fiction superstar, Clint Eastwood, which I respect.
 
-![clint eastwood](../assets/post2/firefox.jpg)
 <p align="center">
   <img src="https://github.com/poptcorn/poptcorn.github.io/blob/master/assets/post2/firefox.jpg?raw=true" alt="clint eastwood"/>
 </p>
