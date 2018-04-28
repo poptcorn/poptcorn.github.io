@@ -45,8 +45,7 @@ I was hoping to see a kind of pattern with different eras separated into blobs, 
 
 As an aside, anyone notice a problem with the above? I said one of the most prolific directors was Alfred Hitchcock, and he's not in our network chart anywhere. This is because of the limitation in our data set of only the 60 most prolific actors, so he actually doesn't have many connections in the network we're calculating. This is an example of a selection bias removing a strong signal.
 
-Anyways, I just explored these by eye, and saw some strong connections, tabulated below (Is it just me, or do a lot of directors' favorite actors look suspiciously like themselves?
-):
+Anyways, I just explored these by eye, and saw some strong connections, tabulated below (Is it just me, or do a lot of directors' favorite actors look suspiciously like themselves?):
 
 Robert De Niro | | Martin Scorsese
 ![deniro](../assets/post2/deniro/deniro.jpg) | ![taxi driver (1976)](../assets/post2/deniro/taxi76.jpg) | ![scorsese](../assets/post2/deniro/scorsese.jpg)
