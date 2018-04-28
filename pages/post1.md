@@ -26,6 +26,8 @@ Now, onto genres. The distribution of genres and the scores these genres tend to
 
 This pie chart represents all the available genres in my data set (labeled on the exterior). The wedges are centered on the average score each genre gets, and the radial extent of the wedges indicates the spread of scores. The global average and range (the Gaussian) are indicated by the solid and dashed circles respectively. The color is also representative of the average score. The angular extent indicates how many films in the data set fall into that particular genre.
 
+So a big wedge means we get a lot of movies in that genre. A wedge that is near the center usually gets worse ratings, and a wedge near the outside gets higher ratings. A tall wedge means the genre has lots of good movies and lots of not so good movies. A short wedge is a consistent genre.
+
 This seems about right, the more “cultured” things like Music, Documentary, History, Foreign are rated more highly. But the bulk of our entertainment intake is coming from the low-investment stuff Comedy, Thriller, Drama, Action. Although, I feel bad for Horror (5.83), losing out in ratings even to straight to TV features (5.98)… Bad luck, Horror.
 
 Something cool to look at is the popularity of genres as a function of year:
