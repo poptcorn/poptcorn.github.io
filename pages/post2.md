@@ -10,7 +10,7 @@ So, to me, I see two regimes: a slowing drop up to acting in 20 movies, then a l
 
 Now those two guys at the top of my data set, I presume no one needs to be told about Samuel L. Jackson. But who's that other guy?! Some of his more famous roles include... "Lion Roars (voice)" *The Lion King* (1994), "Dragon / Animals' Vocal Effects (voice) (uncredited)" *Shrek* (2001), "Abu the Monkey (voice)" *Aladdin* (1992), "Mochi (voice) (uncredited)" *Big Hero 6* (2014)... Laugh all you want, but this guy is no joke:
 
-*"As of September 2010, Welker had voiced or appeared in 93 films with a combined gross revenue of $5.7 billion making him the top grossing actor by this standard (and over $800 million ahead of the next highest grossing actor, Samuel L. Jackson)."* -TMDB description.
+*"As of September 2010, [Frank] Welker had voiced or appeared in 93 films with a combined gross revenue of $5.7 billion making him the top grossing actor by this standard (and over $800 million ahead of the next highest grossing actor, Samuel L. Jackson)."* -TMDB description.
 
 If you need some inhuman voicing that's suitable for children's movies, this you your man.
 
