@@ -42,7 +42,8 @@ And the same thing with *outgoing* connections increasing node-size:
 
 I was hoping to see a kind of pattern with different eras separated into blobs, and different localities in blobs (like a blob for Bollywood, and a blob for Japanese cinema). But since I've just amputated 99% of the data to make it legible and calculable, that geography doesn't exist (also, see the prior post about lacking huge amounts of pre-1970s data). I *may* do a longrun on my work deck over some break to see if I can get this kind of picture, but that's not really possible soon since it's busy with actual work at the moment.
 
-Anyways, I just explored these by eye, and saw some strong connections, tabulated below:
+Anyways, I just explored these by eye, and saw some strong connections, tabulated below (Is it just me, or do a lot of directors' favorite actors look suspiciously like themselves?
+):
 
 Robert De Niro | | Martin Scorsese
 ![deniro](../assets/post2/deniro/deniro.jpg) | ![taxi driver (1976)](../assets/post2/deniro/taxi76.jpg) | ![scorsese](../assets/post2/deniro/scorsese.jpg)
@@ -52,8 +53,6 @@ Tom Hanks | | Steven Spielberg
 ![hanks](../assets/post2/hanks/hanks.jpg) | ![saving private ryan (1998)](../assets/post2/hanks/ryan98.jpg) | ![spielberg](../assets/post2/hanks/spielberg.jpg)
 John Wayne | | John Ford
 ![wayne](../assets/post2/wayne/wayne.jpg) | ![the searchers (1956)](../assets/post2/wayne/searchers56.jpg) | ![ford](../assets/post2/wayne/ford.jpg)
-
-Is it just me, or do a lot of directors' favorite actors look suspiciously like themselves?
 
 ---
 ---
