@@ -24,22 +24,22 @@ Now, the fun part. Specific actors loved by specific directors for their ability
 
 Here is the network chart with colors representing total connections, and bubble-size representing total *incoming* connections (ie. acting in a movie makes the bubble bigger).
 
-![actor web](../assets/apr28/actor_web2.png)
+![actor web](../assets/apr28/actor_web2.pdf)
 
 
 And the same thing with *outgoing* connections increasing node-size:
 
-![director web](../assets/apr28/director_web2.png)
+![director web](../assets/apr28/director_web2.pdf)
 
 
 I was hoping to see a kind of pattern with different eras separated into blobs, and different localities in blobs (like a blob for Bollywood, and a blob for Japanese cinema). But since I've just amputated 99% of the data to make it legible and calculable, that geography doesn't exist (also, see the prior post about lacking huge amounts of pre-1970s data). I *may* do a longrun on my work deck over some break to see if I can get this kind of picture, but that's not really possible soon since it's busy with actual work at the moment.
 
 Anyways, I just explored these by eye, and saw some strong connections, tabulated below:
 
-![deniro](../assets/apr28/deniro/deniro.png) | ![taxi driver (1976)](../assets/apr28/deniro/taxi76.png) | ![scorsese](../assets/apr28/deniro/scorsese.png)
-![depp](../assets/apr28/depp/depp.png) | ![edward scissorhands (1990)](../assets/apr28/depp/scissorhands90.png) | ![burton](../assets/apr28/depp/burton.png)
-![hanks](../assets/apr28/hanks/hanks.png) | ![saving private ryan (1998)](../assets/apr28/hanks/ryan98.png) | ![spielberg](../assets/apr28/hanks/spielberg.png)
-![wayne](../assets/apr28/wayne/wayne.png) | ![the searchers (1956)](../assets/apr28/wayne/searchers56.png) | ![ford](../assets/apr28/wayne/ford.png)
+![deniro](../assets/apr28/deniro/deniro.jpg) | ![taxi driver (1976)](../assets/apr28/deniro/taxi76.jpg) | ![scorsese](../assets/apr28/deniro/scorsese.jpg)
+![depp](../assets/apr28/depp/depp.jpg) | ![edward scissorhands (1990)](../assets/apr28/depp/scissorhands90.jpg) | ![burton](../assets/apr28/depp/burton.jpg)
+![hanks](../assets/apr28/hanks/hanks.jpg) | ![saving private ryan (1998)](../assets/apr28/hanks/ryan98.jpg) | ![spielberg](../assets/apr28/hanks/spielberg.jpg)
+![wayne](../assets/apr28/wayne/wayne.jpg) | ![the searchers (1956)](../assets/apr28/wayne/searchers56.jpg) | ![ford](../assets/apr28/wayne/ford.jpg)
 
 ---
 ---
