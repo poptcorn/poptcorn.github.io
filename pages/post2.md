@@ -1,3 +1,5 @@
+#Best Friends
+
 Okay, we've increased our data set from the last post to all movies with more than 10 ratings (down from 50) to a sample of 23,000 movies (up from 9,000). The reason I'm not just pulling everything is that each individual movie query takes me about 4 seconds for some reason. I'm sure there's a better way, but I'll get to it in the future.
 
 Today, I wanted to look at actor-director "best friends." Like in my mind, when I think Quentin Tarantino, I think Samuel L Jackson. Or when I think of Timp Burton, I see Johnny Depp. Last time we looked at genre, year and rating, this time we'll just look at the variables actors and directors.
@@ -12,7 +14,7 @@ Now those two guys at the top of my data set, I presume no one needs to be told 
 
 *"As of September 2010, [Frank] Welker had voiced or appeared in 93 films with a combined gross revenue of $5.7 billion making him the top grossing actor by this standard (and over $800 million ahead of the next highest grossing actor, Samuel L. Jackson)."* -TMDB description.
 
-If you need some inhuman voicing that's suitable for children's movies, this you your man.
+If you need some inhuman voicing that's suitable for children's movies, this your man.
 
 Let's do the same thing with directors:
 

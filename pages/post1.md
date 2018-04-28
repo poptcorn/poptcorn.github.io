@@ -1,3 +1,5 @@
+#Genres
+
 *Genre – a class or category of artistic endeavor having a particular form, content, technique, or the like:*
 
 This is my first post in a series of posts looking at movies and movie-data. In this opening, I’ll just be looking at the variables: genre, average rating and release year. I’m using data collected using the themoviedb.org API, I’ve collected all the entries with more than 50 rating votes, which is a data set of around 9,000 movies.
