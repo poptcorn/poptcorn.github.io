@@ -20,7 +20,7 @@ Let's do the same thing with directors:
 
 Immediately we notice that directors do less movies than actors. *Way* less. Some of my favorite directors don't do many at all, like Stanley Kubrick with 16 films and Quentin Tarantino with 17 (and some weird CSI episodes / movie). Something interesting about these top two most prolific directors is that they love to self-cast, Hitchcock (left) does small cameos (like the meta-scene in *Vertigo* [1958] where he walks across the screen directly before the scene where the movie plot and psychological manipulation of the protagonist is revealed), while Woody Allen (right) likes to take main roles (*Annie Hall* [1977], *Manhattan* [1979]).
 
-Now, the fun part. Specific actors loved by specific directors for their ability to convey their unique filmatic messages. Side note, I quickly found out that Clint Eastwood's favorite actor is science fiction superstar, Clint Eastwood, which I respect.
+Now, the fun part. Specific actors loved by specific directors for their ability to convey their unique filmatic messages. Side note, I quickly found out that academy award winning director Clint Eastwood's favorite actor is science fiction superstar, Clint Eastwood, which I respect.
 
 <p align="center">
   <img src="https://github.com/poptcorn/poptcorn.github.io/blob/master/assets/post2/firefox.jpg?raw=true" alt="clint eastwood"/>
