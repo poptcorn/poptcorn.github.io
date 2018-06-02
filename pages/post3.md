@@ -43,8 +43,8 @@ Section 2 - actors, directors, writers with the best ratings, consistancy of act
 ---
 I’d like to thank the themoviedb.org folks, who gave me access to their API which was relatively painless to use. I am not affiliated with them in any way and my opinions are my own. I’d also like to thank the developers and maintainers of: Python, Gephi, and matplotlib.
 
-themoviedb.org | python.org | gephi.org | matplotlib.org
-![the movie db](../assets/credit/tmdb.png) | ![python](../assets/credit/python.png) | ![gephi](../assets/credit/gephi.png) | ![matplotlib](../assets/credit/mpl.png)
+themoviedb.org | python.org | scikit-learn.org | matplotlib.org
+![the movie db](../assets/credit/tmdb.png) | ![python](../assets/credit/python.png) | ![gephi](../assets/credit/scikit.png) | ![matplotlib](../assets/credit/mpl.png)
 
 ---
 ---
