@@ -13,22 +13,18 @@ I immediately noticed two things in this correlation matrix:
 
 Anyways, to see if we can predict the success of a film based on the inputs, I just quickly implemented a few simple regressors. Out of our dataset of ~23 thousand items, ~3 thousand have a complete set of attributes. We split this into a training set and and a testing set, and success was determined by the Pearson correlation coefficient between the estimated and true values of the testing set. The algorithms are just a nearest neaighbor (KD) and the scikit-learn support vector regression, bayesian regression, and random forest regression.
 
-Predicting Revenue
- <!-- | 1 | 2 | 3 -->
-KD  | 0.54 | 0.52 | 0.54 |
+KD | 0.54 | 0.52 | 0.54 |
 SVM | 0.05 | 0.09 | 0.08 |
-BR  | 0.74 | 0.72 | 0.72 |
-RF  | 0.75 | 0.71 | 0.75 |
+BR | 0.74 | 0.72 | 0.72 |
+RF | 0.75 | 0.71 | 0.75 |
 
-Predicting Rating
- <!-- | 1 | 2 | 3 -->
-KD  | 0.28 | 0.27 | 0.32 |
+KD | 0.28 | 0.27 | 0.32 |
 SVM | 0.20 | 0.22 | 0.21 |
-BR  | 0.45 | 0.36 | 0.42 |
-RF  | 0.50 | 0.50 | 0.54 |
+BR | 0.45 | 0.36 | 0.42 |
+RF | 0.50 | 0.50 | 0.54 |
 
 
-#Section 2 - actors, directors, writers with the best ratings, consistancy of actors, directors, writers
+Section 2 - actors, directors, writers with the best ratings, consistancy of actors, directors, writers
 
 
 Budget | 1.0 |0.72 |0.17 |-0.07 |0.57 |0.06 |0.26 |0.15 |
