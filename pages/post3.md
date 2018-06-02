@@ -15,16 +15,18 @@ Anyways, to see if we can predict the success of a film based on the inputs, I j
 
 
 Predicting Revenue
-KD | 0.54 | 0.52 | 0.54 |
-SVM | 0.05 | 0.09 | 0.08 |
-BR | 0.74 | 0.72 | 0.72 |
-RF | 0.75 | 0.71 | 0.75 |
+
+KD | 0.54 | 0.52 | 0.54 
+SVM | 0.05 | 0.09 | 0.08 
+BR | 0.74 | 0.72 | 0.72 
+RF | 0.75 | 0.71 | 0.75 
 
 Predicting Rating
-KD | 0.28 | 0.27 | 0.32 |
-SVM | 0.20 | 0.22 | 0.21 |
-BR | 0.45 | 0.36 | 0.42 |
-RF | 0.50 | 0.50 | 0.54 |
+
+KD | 0.28 | 0.27 | 0.32 
+SVM | 0.20 | 0.22 | 0.21 
+BR | 0.45 | 0.36 | 0.42 
+RF | 0.50 | 0.50 | 0.54 
 
 
 Section 2 - actors, directors, writers with the best ratings, consistancy of actors, directors, writers
