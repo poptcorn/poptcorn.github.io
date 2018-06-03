@@ -42,7 +42,7 @@ Now, I wasn't going to point out the lowest average rating directors, but the se
 
 The actors and writers have similar distributions sort of flaring out from a point at high-ratings, low variability.
 
-![director scores](../assets/post3/directors.png)
+![improved tree](../assets/post3/best_tree.png)
 
 
 
