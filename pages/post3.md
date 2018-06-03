@@ -16,19 +16,23 @@ Also, it looks like number of votes, budget, and revenue are all highly correlat
 
 Anyways, to see if we can predict the success of a film based on the inputs, I just quickly implemented a few simple regressors. Out of our dataset of ~23 thousand items, ~3 thousand have a complete set of attributes. We split this into a training set and and a testing set, and success was determined by the Pearson correlation coefficient between the estimated and true values of the testing set. The algorithms are just a nearest neighbor (KD) and the scikit-learn support vector regression (SV), bayesian regression (BR), and random forest (RF) regression.
 
-Predicting Revenue
+We tabulate the average Pearson correlation coefficients of the predicted and actual values for revenue, percent profit (revenue/budget), and average rating, for a few different training and testing set iterations.
 
-KD | 0.54 | 0.52 | 0.54 |
-SV | 0.05 | 0.09 | 0.08 |
-BR | 0.74 | 0.72 | 0.72 |
-RF | 0.75 | 0.71 | 0.75 |
+Predicting
 
-Predicting Rating
+ | Revenue | Percent Profit | Rating |
+NN | .54 | .12 | .27 |
+AB | .61 | .28 | .46 |
+BR | .71 | .19 | .38 |
+RF | .76 | .31 | .49 |
 
-KD | 0.28 | 0.27 | 0.32 |
-SV | 0.20 | 0.22 | 0.21 |
-BR | 0.45 | 0.36 | 0.42 |
-RF | 0.50 | 0.50 | 0.54 |
+As an example of the predictors, we plot the estimations of the different algorithms.
+
+![algo predictions](../assets/post3/algo_predictions.png)
+
+
+
+tsne of films? color coded by rating / revenue ... revenue/budget as a percent profit?
 
 
 Section 2 - actors, directors, writers with the best ratings, consistancy of actors, directors, writers
