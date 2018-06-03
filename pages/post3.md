@@ -42,9 +42,15 @@ Now, I wasn't going to point out the lowest average rating directors, but the se
 
 The actors and writers have similar distributions sort of flaring out from a point at high-ratings, low variability.
 
+Using this information -- that actors, directors and writers have distinct average ratings -- I've added in three scores for films based on their actors, directors, and writers. I used a simple average; so if a movie have 3 actors in it, the actor score is just the average of those three. Some improvement could probably be made using a weighted average based on how many films the different actors have been in as well.
+
+Adding this information into the random forest yields some pretty impressive predictive ability. We have a correlation coefficient of about 0.8 (compared to ~0.5 without the actor, director, and writer score averages for the same random forest algorithm) between our predicted film rating and the actual film rating.
+
 ![improved forest](../assets/post3/best_forest.png)
 
+So, in the end, I would have to say yes, we can predict with reasonable accuracy if a random film will end up being a highly rated film or not. In my opinion this doesn't really mean much though, since some of the best films are most certainly not "good" films. Like some of my personal favorites below.
 
+![armageddon](../assets/post3/armageddon.png) | ![big trouble in little china](../assets/post3/bigtrouble.png) | ![knightriders](../assets/post3/knightriders.png)
 
 tsne of films? color coded by rating / revenue ... revenue/budget as a percent profit?
 
@@ -58,7 +64,7 @@ Section 2 - actors, directors, writers with the best ratings, consistancy of act
 
 ---
 ---
-I’d like to thank the themoviedb.org folks, who gave me access to their API which was relatively painless to use. I am not affiliated with them in any way and my opinions are my own. I’d also like to thank the developers and maintainers of: Python, Gephi, and matplotlib.
+I’d like to thank the themoviedb.org folks, who gave me access to their API which was relatively painless to use. I am not affiliated with them in any way and my opinions are my own. I’d also like to thank the developers and maintainers of: Python, scikit-learn, and matplotlib.
 
 themoviedb.org | python.org | scikit-learn.org | matplotlib.org
 ![the movie db](../assets/credit/tmdb.png) | ![python](../assets/credit/python.png) | ![gephi](../assets/credit/scikit.png) | ![matplotlib](../assets/credit/mpl.png)
