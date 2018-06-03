@@ -38,7 +38,11 @@ So, let's go ahead and look at the average and deviations of film ratings for di
 
 ![director scores](../assets/post3/directors.png)
 
-The actors and writers have similar di
+Now, I wasn't going to point out the lowest average rating directors, but the second lowest average was M. Night Shyamalan and that seems completely unfair to me. Say what you will, "Unbreakable" (2000) was a masterpiece.
+
+The actors and writers have similar distributions sort of flaring out from a point at high-ratings, low variability.
+
+![director scores](../assets/post3/directors.png)
 
 
 
