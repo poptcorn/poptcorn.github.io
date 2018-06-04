@@ -52,18 +52,10 @@ Adding this information into the random forest yields some pretty impressive pre
 
 So, in the end, I would have to say *yes, we can predict with reasonable accuracy if a random film will end up being a highly rated film or not.* In my opinion this doesn't really mean much though, since some of the best films are most certainly not "good" films. Like some of my personal favorites below.
 
-Buckaroo Banzai (1984; 64%) | Cherry 2000 (1987; 59%) | Knightriders (1981; 61%) | Postman (1997; 61%)
+Buckaroo Banzai  \n(1984; 64%) | Cherry 2000  \n(1987; 59%) | Knightriders  \n(1981; 61%) | Postman  \n(1997; 61%)
 ![buckaroo](../assets/post3/buckaroo.jpg) | ![cherry 2000](../assets/post3/cherry.jpg) | ![knightriders](../assets/post3/knightriders.jpg) | ![postman](../assets/post3/postman.jpg)
 
 tsne of films? color coded by rating / revenue ... revenue/budget as a percent profit?
-
-
-Section 2 - actors, directors, writers with the best ratings, consistancy of actors, directors, writers
-
-prediction outliers
-
-
-
 
 ---
 ---
