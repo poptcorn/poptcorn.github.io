@@ -8,9 +8,9 @@ The first thing to do would be to look at a simple correlation matrix of the num
 ![correlation matrix](../assets/post3/corr_matrix_cmap_annotated.png)
 
 I immediately noticed three things in this correlation matrix:
-1) Budget is a decent predictor of *revenue* (it's also a good predictor of number of votes, I guess higher budget movies have more advertising which increases both of those), but it's *negatively correlated with the average vote and the percent profit at the end.*
-2) Running time is strongly correlated with the final average score, but not very correlated with percent profit.
-3) The number of writers is positively correlated with the revenue but inversely correlated with the final rating. Having multiple directors is also more correlated with higher revenue.
+..1) Budget is a decent predictor of *revenue* (it's also a good predictor of number of votes, I guess higher budget movies have more advertising which increases both of those), but it's *negatively correlated with the average vote and the percent profit at the end.*
+..2) Running time is strongly correlated with the final average score, but not very correlated with percent profit.
+..3) The number of writers is positively correlated with the revenue but inversely correlated with the final rating. Having multiple directors is also more correlated with higher revenue.
 
 Also, it looks like number of votes, budget, and revenue are all highly correlated. This makes sense for high profile films with large advertising campaigns.
 
@@ -52,7 +52,7 @@ Adding this information into the random forest yields some pretty impressive pre
 
 So, in the end, I would have to say *yes, we can predict with reasonable accuracy if a random film will end up being a highly rated film or not.* In my opinion this doesn't really mean much though, since some of the best films are most certainly not "good" films. Like some of my personal favorites below.
 
-Buckaroo Banzai  \n(1984; 64%) | Cherry 2000  \n(1987; 59%) | Knightriders  \n(1981; 61%) | Postman  \n(1997; 61%)
+Buckaroo Banzai<br />(1984; 64%) | Cherry 2000<br />(1987; 59%) | Knightriders<br />(1981; 61%) | Postman<br />(1997; 61%)
 ![buckaroo](../assets/post3/buckaroo.jpg) | ![cherry 2000](../assets/post3/cherry.jpg) | ![knightriders](../assets/post3/knightriders.jpg) | ![postman](../assets/post3/postman.jpg)
 
 tsne of films? color coded by rating / revenue ... revenue/budget as a percent profit?
