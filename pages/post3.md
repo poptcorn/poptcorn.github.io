@@ -21,10 +21,10 @@ We tabulate the average Pearson correlation coefficients of the predicted and ac
 Predicting
 
  | Revenue | Percent Profit | Rating |
-NN | .54 | .12 | .27 |
-AB | .61 | .28 | .46 |
-BR | .71 | .19 | .38 |
-RF | .76 | .31 | .49 |
+Nearest Neighbor | .54 | .12 | .27 |
+AdaBoosted Trees | .61 | .28 | .46 |
+Bayesian Ridge | .71 | .19 | .38 |
+Random Forest | .76 | .31 | .49 |
 
 In the past on other problems, I've tended to have good success with the random forest method, and it seems to perform well on these data as well. All of these predictors work substantially better than the nearest neighbor. As an example of the predictors, we plot the estimations of the different algorithms.
 
@@ -40,16 +40,19 @@ So, let's go ahead and look at the average and deviations of film ratings for di
 
 Now, I wasn't going to point out the lowest average rating directors, but the second lowest average was M. Night Shyamalan and that seems completely unfair to me. Say what you will, "Unbreakable" (2000) was a masterpiece.
 
-The actors and writers have similar distributions sort of flaring out from a point at high-ratings, low variability.
+The actors and writers have similar distributions sort of flaring out from a point at high-ratings, low variability toward lower ratings and with a higher spread in variability. The actor plot has too many points to be fun, and quite honestly I don't recognize a lot of the writers, so we'll just move on.
 
-Using this information -- that actors, directors and writers have distinct average ratings -- I've added in three scores for films based on their actors, directors, and writers. I used a simple average; so if a movie have 3 actors in it, the actor score is just the average of those three. Some improvement could probably be made using a weighted average based on how many films the different actors have been in as well.
+Using this information -- that actors, directors and writers have distinct average ratings -- I've added into our training data three scores for films, based on their actors, directors, and writers. I used a simple average; so if a movie have 3 actors in it, the actor score is just the average of those three actors' average movie ratings. Some improvement could probably be made using a weighted average based on how many films the different actors have been in as well.
+
+There is a caveat that I'm actually cheating a bit here. I'm calculating an actor / director / writer score based on the entire career of that person, not just up until the release date of the movies that we are attempting to predict a rating for. So an actor's weighted rating is calculated using information from the films we are trying to predict weightings for. **That's a big no-no.** A more proper technique would be to redefine a training set for each movie consisting of all movies released prior to it and recalculating the actor / director / writer scores based on this subset. I'm not doing it that way because it's just too computationally time intensive at the moment.
 
 Adding this information into the random forest yields some pretty impressive predictive ability. We have a correlation coefficient of about 0.8 (compared to ~0.5 without the actor, director, and writer score averages for the same random forest algorithm) between our predicted film rating and the actual film rating.
 
 ![improved forest](../assets/post3/best_forest.png)
 
-So, in the end, I would have to say yes, we can predict with reasonable accuracy if a random film will end up being a highly rated film or not. In my opinion this doesn't really mean much though, since some of the best films are most certainly not "good" films. Like some of my personal favorites below.
+So, in the end, I would have to say *yes, we can predict with reasonable accuracy if a random film will end up being a highly rated film or not.* In my opinion this doesn't really mean much though, since some of the best films are most certainly not "good" films. Like some of my personal favorites below.
 
+Buckaroo Banzai (1984; 64%) | Cherry 2000 (1987; 59%) | Knightriders (1981; 61%) | Postman (1997; 61%)
 ![buckaroo](../assets/post3/buckaroo.jpg) | ![cherry 2000](../assets/post3/cherry.jpg) | ![knightriders](../assets/post3/knightriders.jpg) | ![postman](../assets/post3/postman.jpg)
 
 tsne of films? color coded by rating / revenue ... revenue/budget as a percent profit?
