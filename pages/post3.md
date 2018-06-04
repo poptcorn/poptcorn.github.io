@@ -50,14 +50,14 @@ Adding this information into the random forest yields some pretty impressive pre
 
 So, in the end, I would have to say yes, we can predict with reasonable accuracy if a random film will end up being a highly rated film or not. In my opinion this doesn't really mean much though, since some of the best films are most certainly not "good" films. Like some of my personal favorites below.
 
-![armageddon](../assets/post3/armageddon.jpg) | ![big trouble in little china](../assets/post3/bigtrouble.jpg) | ![knightriders](../assets/post3/knightriders.jpg)
+![buckaroo](../assets/post3/buckaroo.jpg) | ![cherry 2000](../assets/post3/cherry.jpg) | ![knightriders](../assets/post3/knightriders.jpg) | ![postman](../assets/post3/postman.jpg)
 
 tsne of films? color coded by rating / revenue ... revenue/budget as a percent profit?
 
 
 Section 2 - actors, directors, writers with the best ratings, consistancy of actors, directors, writers
 
-
+prediction outliers
 
 
 
