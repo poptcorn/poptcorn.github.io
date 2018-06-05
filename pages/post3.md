@@ -18,11 +18,15 @@ Anyways, to see if we can predict the success of a film based on the inputs, I j
 
 We tabulate the average Pearson correlation coefficients of the predicted and actual values for revenue, percent profit (revenue/budget), and average rating, for a few different training and testing set iterations.
 
-Algorithm | Revenue | Percent Profit | Rating |
+<!-- Algorithm | Revenue | Percent Profit | Rating |
 Nearest Neighbor | .54 | .12 | .27 |
 AdaBoosted Trees | .61 | .28 | .46 |
 Bayesian Ridge | .71 | .19 | .38 |
-Random Forest | .76 | .31 | .49 |
+Random Forest | .76 | .31 | .49 | -->
+
+<p align="center">
+  <img src="https://github.com/poptcorn/poptcorn.github.io/blob/master/assets/post3/cantcentertables.jpg?raw=true" alt="table algos"/>
+</p>
 
 
 In the past, on other problems, I've tended to have good success with the random forest method, and it seems to perform well on these data as well. All of these predictors work substantially better than the nearest neighbor. As an example of the predictors, we plot the estimations of the different algorithms.
