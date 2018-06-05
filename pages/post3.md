@@ -53,7 +53,7 @@ Adding this information into the random forest yields some pretty impressive pre
 
 ![improved forest](../assets/post3/best_forest.png)
 
-There're a few interesting outliers to the algorithm (to this particular training-testing set iteration). Most notably I would say are: (1) "Speed 2" (1997) which had high profile actors Sandra Bullock and Willem Dafoe which possibly buoyed the predicted score; and (2) "Dead Poets Society" (1989) which might have been predicted too low because of Robin Williams' comedy career (since comedy generally scores quite a bit lower than drama).
+There're a few interesting outliers to the algorithm (to this particular training-testing set iteration). Most notably I would say are: (1) [*Speed 2* [1997]](https://www.themoviedb.org/movie/1639-speed-2-cruise-control) which had high profile actors Sandra Bullock and Willem Dafoe which possibly buoyed the predicted score; and (2) ["Dead Poets Society" (1989)](https://www.themoviedb.org/movie/207-dead-poets-society) which might have been predicted too low because of Robin Williams' comedy career (since comedy generally scores quite a bit lower than drama).
 
 There is more information that could be added into this predictor, for example the [genre](https://poptcorn.github.io/pages/post1.html) of the film tends to have an effect on the audience rating. We could also overtrain by considering the release date, which we have seen before is biased to higher scores for older movies (which I would say is only relevant in this data set, and doesn't help with predicting new film scores). Or there might also be a title effect, I would expect sequels to have longer titles on average (including subtitles) and lower scores on average.
 
