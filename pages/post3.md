@@ -25,7 +25,7 @@ Bayesian Ridge | .71 | .19 | .38 |
 Random Forest | .76 | .31 | .49 | -->
 
 <p align="center">
-  <img src="https://github.com/poptcorn/poptcorn.github.io/blob/master/assets/post3/cantcentertables.jpg?raw=true" alt="table center"/>
+  <img src="https://github.com/poptcorn/poptcorn.github.io/blob/master/assets/post3/cantcentertables.png?raw=true" alt="table center"/>
 </p>
 
 
@@ -59,8 +59,8 @@ There is more information that could be added into this predictor, for example t
 
 That aside, in the end, I would have to say *yes, we can predict with reasonable accuracy if a random film will end up being a highly rated film or not.* In my opinion this doesn't really mean much though, since some of the best films are not highly rated, like some of my personal favorites below.
 
-*Buckaroo Banzai*<br />(1984; 64%) | *Cherry 2000*<br />(1987; 59%) | *Knightriders*<br />(1981; 62%) | *Stripes*<br />(1981; 65%)
-![buckaroo](../assets/post3/buckaroo.jpg) | ![cherry 2000](../assets/post3/cherry.jpg) | ![knightriders](../assets/post3/knightriders.jpg) | ![stripes](../assets/post3/stripes.jpg)
+*Buckaroo Banzai*<br />(1984; 64%) | *Knightriders*<br />(1981; 62%) | *The Postman*<br />(1997; 61%) | *Stripes*<br />(1981; 65%)
+![buckaroo](../assets/post3/buckaroo.jpg) | ![knightriders](../assets/post3/knightriders.jpg) | ![postman](../assets/post3/postman.jpg) | ![stripes](../assets/post3/stripes.jpg)
 
 
 ---
