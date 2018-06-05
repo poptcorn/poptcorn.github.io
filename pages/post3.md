@@ -8,15 +8,17 @@ The first thing to do would be to look at a simple correlation matrix of the num
 ![correlation matrix](../assets/post3/corr_matrix_cmap_annotated.png)
 
 I immediately noticed three things in this correlation matrix:
-..1) Budget is a decent predictor of *revenue* (it's also a good predictor of number of votes, I guess higher budget movies have more advertising which increases both of those), but it's *negatively correlated with the average vote and the percent profit at the end.*
-..2) Running time is strongly correlated with the final average score, but not very correlated with percent profit.
-..3) The number of writers is positively correlated with the revenue but inversely correlated with the final rating. Having multiple directors is also more correlated with higher revenue.
+1. Budget is a decent predictor of *revenue* (it's also a good predictor of number of votes, I guess higher budget movies have more advertising which increases both of those), but it's *negatively correlated with the average vote and the percent profit at the end.*
+2. Running time is strongly correlated with the final average score, but not very correlated with percent profit.
+3. The number of writers is positively correlated with the revenue but inversely correlated with the final rating. Having multiple directors is also more correlated with higher revenue.
 
 Also, it looks like number of votes, budget, and revenue are all highly correlated. This makes sense for high profile films with large advertising campaigns.
 
-Anyways, to see if we can predict the success of a film based on the inputs, I just quickly implemented a few simple regressors. Out of our dataset of ~23 thousand items, ~3 thousand have a complete set of attributes. We split this into a training set and and a testing set, and success was determined by the Pearson correlation coefficient between the estimated and true values of the testing set. The algorithms are just a nearest neighbor (NN) and the scikit-learn bayesian regression (BR), adaboost.R2 regression (AB), and random forest (RF) regression.
+Anyways, to see if we can predict the success of a film based on the inputs, I just quickly implemented a few simple regressors. Out of our dataset of ~23 thousand items, ~3 thousand have a complete set of attributes. We split this into a training set and and a testing set, and success was determined by the Pearson correlation coefficient between the estimated and true values of the testing set. The algorithms are just a nearest neighbor and the scikit-learn bayesian regression, adaboost.R2 regression, and random forest regression.
 
 We tabulate the average Pearson correlation coefficients of the predicted and actual values for revenue, percent profit (revenue/budget), and average rating, for a few different training and testing set iterations.
+
+<center>
 
 Algorithm | Revenue | Percent Profit | Rating |
 Nearest Neighbor | .54 | .12 | .27 |
@@ -24,7 +26,9 @@ AdaBoosted Trees | .61 | .28 | .46 |
 Bayesian Ridge | .71 | .19 | .38 |
 Random Forest | .76 | .31 | .49 |
 
-In the past on other problems, I've tended to have good success with the random forest method, and it seems to perform well on these data as well. All of these predictors work substantially better than the nearest neighbor. As an example of the predictors, we plot the estimations of the different algorithms.
+</center>
+
+In the past, on other problems, I've tended to have good success with the random forest method, and it seems to perform well on these data as well. All of these predictors work substantially better than the nearest neighbor. As an example of the predictors, we plot the estimations of the different algorithms.
 
 ![algo predictions](../assets/post3/algo_predictions.png)
 
@@ -48,11 +52,11 @@ Adding this information into the random forest yields some pretty impressive pre
 
 ![improved forest](../assets/post3/best_forest.png)
 
-There're a few interesting outliers to the algorithm. Most notably I would say are: (1) "Speed 2" (1997) which had high profile actors Sandra Bullock and Willem Dafoe which possibly buoyed the predicted score; and (2) "Dead Poets Society" (1989) which might have been predicted too low because of Robin Williams' comedy career (since comedy generally scores quite a bit lower than drama).
+There're a few interesting outliers to the algorithm (to this particular training-testing set iteration). Most notably I would say are: (1) "Speed 2" (1997) which had high profile actors Sandra Bullock and Willem Dafoe which possibly buoyed the predicted score; and (2) "Dead Poets Society" (1989) which might have been predicted too low because of Robin Williams' comedy career (since comedy generally scores quite a bit lower than drama).
 
 There is more information that could be added into this predictor, for example the [genre](https://poptcorn.github.io/pages/post1.html) of the film tends to have an effect on the audience rating. We could also overtrain by considering the release date, which we have seen before is biased to higher scores for older movies (which I would say is only relevant in this data set, and doesn't help with predicting new film scores). Or there might also be a title effect, I would expect sequels to have longer titles on average (including subtitles) and lower scores on average.
 
-That aside, in the end, I would have to say *yes, we can predict with reasonable accuracy if a random film will end up being a highly rated film or not.* In my opinion this doesn't really mean much though, since some of the best films are most certainly not "good" films. Like some of my personal favorites below.
+That aside, in the end, I would have to say *yes, we can predict with reasonable accuracy if a random film will end up being a highly rated film or not.* In my opinion this doesn't really mean much though, since some of the best films are not really highly rated, like some of my personal favorites below.
 
 Buckaroo Banzai<br />(1984; 64%) | Cherry 2000<br />(1987; 59%) | Knightriders<br />(1981; 61%) | Postman<br />(1997; 61%)
 ![buckaroo](../assets/post3/buckaroo.jpg) | ![cherry 2000](../assets/post3/cherry.jpg) | ![knightriders](../assets/post3/knightriders.jpg) | ![postman](../assets/post3/postman.jpg)
