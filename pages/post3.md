@@ -45,7 +45,7 @@ Now, I wasn't going to point out the lowest average rating directors, but the se
 
 The actors and writers have similar distributions sort of flaring out from a point at high-ratings, low variability toward lower ratings and with a higher spread in variability. The actor plot has too many points to be fun, and quite honestly I don't recognize a lot of the writers, so we'll just move on.
 
-![writers](../assets/post3/writers.jpg) | ![actors](../assets/post3/actors.jpg)
+![writers](../assets/post3/writers.png) | ![actors](../assets/post3/actors.png)
 
 Using this information -- that actors, directors and writers have distinct average ratings -- I've added into our training data three scores for films, based on their actors, directors, and writers. I used a simple average; so if a movie have 3 actors in it, the actor score is just the average of those three actors' average movie ratings. Some improvement could probably be made using a weighted average based on how many films the different actors have been in as well.
 
