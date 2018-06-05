@@ -59,7 +59,7 @@ There is more information that could be added into this predictor, for example t
 
 That aside, in the end, I would have to say *yes, we can predict with reasonable accuracy if a random film will end up being a highly rated film or not.* In my opinion this doesn't really mean much though, since some of the best films are not highly rated, like some of my personal favorites below.
 
-[Buckaroo Banzai<br />(1984; 64%)](https://www.themoviedb.org/movie/11379-the-adventures-of-buckaroo-banzai-across-the-8th-dimension) | [Cherry 2000<br />(1987; 59%)](https://www.themoviedb.org/movie/15785-cherry-2000) | [Knightriders<br />(1981; 62%)](https://www.themoviedb.org/movie/22167-knightriders) | [Stripes<br />(1981; 65%)](https://www.themoviedb.org/movie/10890-stripes)
+*Buckaroo Banzai*<br />(1984; 64%) | *Cherry 2000*<br />(1987; 59%) | *Knightriders*<br />(1981; 62%) | *Stripes*<br />(1981; 65%)
 ![buckaroo](../assets/post3/buckaroo.jpg) | ![cherry 2000](../assets/post3/cherry.jpg) | ![knightriders](../assets/post3/knightriders.jpg) | ![stripes](../assets/post3/stripes.jpg)
 
 
