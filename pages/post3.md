@@ -45,6 +45,8 @@ Now, I wasn't going to point out the lowest average rating directors, but the se
 
 The actors and writers have similar distributions sort of flaring out from a point at high-ratings, low variability toward lower ratings and with a higher spread in variability. The actor plot has too many points to be fun, and quite honestly I don't recognize a lot of the writers, so we'll just move on.
 
+![writers](../assets/post3/writers.jpg) | ![actors](../assets/post3/actors.jpg) 
+
 Using this information -- that actors, directors and writers have distinct average ratings -- I've added into our training data three scores for films, based on their actors, directors, and writers. I used a simple average; so if a movie have 3 actors in it, the actor score is just the average of those three actors' average movie ratings. Some improvement could probably be made using a weighted average based on how many films the different actors have been in as well.
 
 There is a caveat that I'm actually cheating a bit here. I'm calculating an actor / director / writer score based on the entire career of that person, not just up until the release date of the movies that we are attempting to predict a rating for. So an actor's weighted rating is calculated using information from the films we are trying to predict weightings for. **That's a big no-no.** A more proper technique would be to redefine a training set for each movie consisting of all movies released prior to it and recalculating the actor / director / writer scores based on this subset. I'm not doing it that way because it's just too computationally time intensive at the moment.
