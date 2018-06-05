@@ -25,7 +25,7 @@ Bayesian Ridge | .71 | .19 | .38 |
 Random Forest | .76 | .31 | .49 | -->
 
 <p align="center">
-  <img src="https://github.com/poptcorn/poptcorn.github.io/blob/master/assets/post3/cantcentertables.jpg?raw=true" alt="table algos"/>
+  <img src="https://github.com/poptcorn/poptcorn.github.io/blob/master/assets/post3/cantcentertables.jpg?raw=true" alt="table center"/>
 </p>
 
 
@@ -41,7 +41,7 @@ So, let's go ahead and look at the average and deviations of film ratings for di
 
 ![director scores](../assets/post3/directors.png)
 
-Now, I wasn't going to point out the lowest average rating directors, but the second lowest average was M. Night Shyamalan and that seems completely unfair to me. Say what you will, ["Unbreakable" (2000)](https://www.themoviedb.org/movie/9741-unbreakable) was a masterpiece.
+Now, I wasn't going to point out the lowest average rating directors, but the second lowest average was M. Night Shyamalan and that seems completely unfair to me. Say what you will, *Unbreakable* [2000] was a masterpiece.
 
 The actors and writers have similar distributions sort of flaring out from a point at high-ratings, low variability toward lower ratings and with a higher spread in variability. The actor plot has too many points to be fun, and quite honestly I don't recognize a lot of the writers, so we'll just move on.
 
@@ -53,13 +53,13 @@ Adding this information into the random forest yields some pretty impressive pre
 
 ![improved forest](../assets/post3/best_forest.png)
 
-There're a few interesting outliers to the algorithm (to this particular training-testing set iteration). Most notably I would say are: (1) [*Speed 2* [1997]](https://www.themoviedb.org/movie/1639-speed-2-cruise-control) which had high profile actors Sandra Bullock and Willem Dafoe which possibly buoyed the predicted score; and (2) ["Dead Poets Society" (1989)](https://www.themoviedb.org/movie/207-dead-poets-society) which might have been predicted too low because of Robin Williams' comedy career (since comedy generally scores quite a bit lower than drama).
+There're a few interesting outliers to the algorithm (to this particular training-testing set iteration). Most notably I would say are: (1) *Speed 2* [1997] which had high profile actors Sandra Bullock and Willem Dafoe which possibly buoyed the predicted score; and (2) *Dead Poets Society* [1989] which might have been predicted too low because of Robin Williams' comedy career (since comedy generally scores quite a bit lower than drama).
 
 There is more information that could be added into this predictor, for example the [genre](https://poptcorn.github.io/pages/post1.html) of the film tends to have an effect on the audience rating. We could also overtrain by considering the release date, which we have seen before is biased to higher scores for older movies (which I would say is only relevant in this data set, and doesn't help with predicting new film scores). Or there might also be a title effect, I would expect sequels to have longer titles on average (including subtitles) and lower scores on average.
 
-That aside, in the end, I would have to say *yes, we can predict with reasonable accuracy if a random film will end up being a highly rated film or not.* In my opinion this doesn't really mean much though, since some of the best films are not really highly rated, like some of my personal favorites below.
+That aside, in the end, I would have to say *yes, we can predict with reasonable accuracy if a random film will end up being a highly rated film or not.* In my opinion this doesn't really mean much though, since some of the best films are not highly rated, like some of my personal favorites below.
 
-[Buckaroo Banzai<br />(1984; 64%)](https://www.themoviedb.org/movie/11379-the-adventures-of-buckaroo-banzai-across-the-8th-dimension) | [Cherry 2000<br />(1987; 59%)](https://www.themoviedb.org/movie/15785-cherry-2000) | [Knightriders<br />(1981; 65%)](https://www.themoviedb.org/movie/22167-knightriders) | [Stripes<br />(1981; 65%)](https://www.themoviedb.org/movie/10890-stripes)
+[Buckaroo Banzai<br />(1984; 64%)](https://www.themoviedb.org/movie/11379-the-adventures-of-buckaroo-banzai-across-the-8th-dimension) | [Cherry 2000<br />(1987; 59%)](https://www.themoviedb.org/movie/15785-cherry-2000) | [Knightriders<br />(1981; 62%)](https://www.themoviedb.org/movie/22167-knightriders) | [Stripes<br />(1981; 65%)](https://www.themoviedb.org/movie/10890-stripes)
 ![buckaroo](../assets/post3/buckaroo.jpg) | ![cherry 2000](../assets/post3/cherry.jpg) | ![knightriders](../assets/post3/knightriders.jpg) | ![stripes](../assets/post3/stripes.jpg)
 
 
