@@ -1,4 +1,5 @@
 theme: minima
 markdown: kramdown
+description: Website about exploring the data behind movies. An excuse to have fun while learning new analysis techniques and share some findings along the way.
 email: poptcornATprotonmailDOTcom
-show_excerpts: false
+show_excerpts: true
