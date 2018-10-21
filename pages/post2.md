@@ -1,4 +1,4 @@
-<!-- Best Friends -->
+Best Friends
 ---
 
 Okay, we've increased our data set from the last post to all movies with more than 10 ratings (down from 50) to a sample of 23,000 movies (up from 9,000). The reason I'm not just pulling everything is that each individual movie query takes me about 4 seconds for some reason. I'm sure there's a better way, but I'll get to it in the future.
