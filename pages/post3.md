@@ -3,7 +3,7 @@ Gambling
 
 In this post, I wanted to look at how possible it is to predict a film's success based on attributes we know before release.
 
-The first thing to do would be to look at a simple correlation matrix of the numeric variables to see if any are obviously correlated. For the input variables we have: budget, runtime, number of directors, number of actors, and number of writers. For prediction variables we have: revenue, average vote, and number of votes.
+The first thing to do would be to look at a simple correlation matrix of the numeric variables to see if any are obviously correlated. For the input variables we have: budget, runtime, number of directors, number of actors, and number of writers. For prediction variables we have: revenue, average vote, number of votes, and percent profit.
 
 ![correlation matrix](../assets/post3/corr_matrix_cmap_annotated.png)
 

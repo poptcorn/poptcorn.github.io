@@ -54,7 +54,7 @@ Some genres are also cycle through in tandem like…
 
 ![the 1980s](../assets/post1/1980s.png)
 
-In the 1980s Sci-Fi is at a zenith along with Horror: *Star Wars* (1977, 1980, 1983), *Bladerunner* (1982), *E.T.* (1982) *Terminator* (1984), *Ghostbusters* (1984, 1989), *Back to the Future* (1985, 1989), *Aliens* (1986), *They Live* (1988). And Sci-Fi Horror hybrids like *Videodrome* (1983), *Reanimator* (1985), *They Live* (1988) and the towering *Alien* (1979).
+In the 1980s Sci-Fi is at a zenith along with Horror: *Star Wars* (1977, 1980, 1983), *Bladerunner* (1982), *E.T.* (1982) *Terminator* (1984), *Ghostbusters* (1984, 1989), *Back to the Future* (1985, 1989), *Aliens* (1986). And Sci-Fi Horror hybrids like *Videodrome* (1983), *Reanimator* (1985), *They Live* (1988) and the towering *Alien* (1979).
 
 ![film noir](../assets/post1/noir.png)
 
