@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1"><!-- Begin Jekyll SEO tag v2.5.0 -->
+<title>Best Friends | poptcorn.github.io</title>
+<meta name="generator" content="Jekyll v3.7.4" />
+<meta property="og:title" content="Best Friends" />
+<meta property="og:locale" content="en_US" />
+<link rel="canonical" href="http://localhost:4000/pages/post2.html" />
+<meta property="og:url" content="http://localhost:4000/pages/post2.html" />
+<meta property="og:site_name" content="poptcorn.github.io" />
+<script type="application/ld+json">
+{"@type":"WebPage","url":"http://localhost:4000/pages/post2.html","headline":"Best Friends","@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+<link rel="stylesheet" href="/assets/main.css"><link type="application/atom+xml" rel="alternate" href="http://localhost:4000/feed.xml" title="poptcorn.github.io" /></head>
+<body><header class="site-header" role="banner">
+
+  <div class="wrapper"><a class="site-title" rel="author" href="/">poptcorn.github.io</a><nav class="site-nav">
+        <input type="checkbox" id="nav-trigger" class="nav-trigger" />
+        <label for="nav-trigger">
+          <span class="menu-icon">
+            <svg viewBox="0 0 18 15" width="18px" height="15px">
+              <path d="M18,1.484c0,0.82-0.665,1.484-1.484,1.484H1.484C0.665,2.969,0,2.304,0,1.484l0,0C0,0.665,0.665,0,1.484,0 h15.032C17.335,0,18,0.665,18,1.484L18,1.484z M18,7.516C18,8.335,17.335,9,16.516,9H1.484C0.665,9,0,8.335,0,7.516l0,0 c0-0.82,0.665-1.484,1.484-1.484h15.032C17.335,6.031,18,6.696,18,7.516L18,7.516z M18,13.516C18,14.335,17.335,15,16.516,15H1.484 C0.665,15,0,14.335,0,13.516l0,0c0-0.82,0.665-1.483,1.484-1.483h15.032C17.335,12.031,18,12.695,18,13.516L18,13.516z"/>
+            </svg>
+          </span>
+        </label>
+
+        <div class="trigger"><a class="page-link" href="/pages/post1.html">Genres</a><a class="page-link" href="/pages/post2.html">Best Friends</a><a class="page-link" href="/pages/post3.html">Gambling</a><a class="page-link" href="/pages/post4.html">Recommendations</a></div>
+      </nav></div>
+</header>
+<main class="page-content" aria-label="Content">
+      <div class="wrapper">
+        <article class="post">
+
+  <header class="post-header">
+    <h1 class="post-title">Best Friends</h1>
+  </header>
+
+  <div class="post-content">
+    <h2 id="best-friends">Best Friends</h2>
+
+<p>Okay, we’ve increased our data set from the last post to all movies with more than 10 ratings (down from 50) to a sample of 23,000 movies (up from 9,000). The reason I’m not just pulling everything is that each individual movie query takes me about 4 seconds for some reason. I’m sure there’s a better way, but I’ll get to it in the future.</p>
+
+<p>Today, I wanted to look at actor-director “best friends.” Like in my mind, when I think Quentin Tarantino, I think Samuel L Jackson. Or when I think of Tim Burton, I see Johnny Depp. Last time we looked at genre, year and rating, this time we’ll just look at the variables actors and directors.</p>
+
+<p>So first of all, let’s look at a simple distribution of our data. First, let’s see how many movies actors usually appear in:</p>
+
+<p><img src="/assets/post2/actors.png" alt="actors by films" /></p>
+
+<p>So, to me, I see two regimes: a slowing drop up to acting in 20 movies, then a linear drop after that. If you are in one movie, a portion of actors will get a part in a second movie, if you are in two, a higher portion will get a third, if you are in three a higher percentage will get a fourth… etc, so actors get their foot in the door and it gets relatively easier and easier to get into more movies (note this is log-scaled)… up to 20 movies. At 20 movies, this looks pretty log-linear, so my interpretation is that at 20 movies, you are an established pro, and at that point it’s just a matter of how much time you spend acting. This is 100% guessing.</p>
+
+<p>Now those two guys at the top of my data set, I presume no one needs to be told about Samuel L. Jackson. But who’s that other guy?! Some of his more famous roles include… “Lion Roars (voice)” <em>The Lion King</em> (1994), “Dragon / Animals’ Vocal Effects (voice) (uncredited)” <em>Shrek</em> (2001), “Abu the Monkey (voice)” <em>Aladdin</em> (1992), “Mochi (voice) (uncredited)” <em>Big Hero 6</em> (2014)… Laugh all you want, but this guy is no joke:</p>
+
+<p><em>“As of September 2010, [Frank] Welker had voiced or appeared in 93 films with a combined gross revenue of $5.7 billion making him the top grossing actor by this standard (and over $800 million ahead of the next highest grossing actor, Samuel L. Jackson).”</em> -TMDB description.</p>
+
+<p>If you need some inhuman voicing that’s suitable for children’s movies, this your man.</p>
+
+<p>Let’s do the same thing with directors:</p>
+
+<p><img src="/assets/post2/directors.png" alt="directors by films" /></p>
+
+<p>Immediately we notice that directors do less movies than actors. <em>Way</em> less. Some of my favorite directors don’t do many at all, like Stanley Kubrick with 16 films and Quentin Tarantino with 17 (and some weird CSI episodes / movie). Something interesting about these top two most prolific directors is that they love to self-cast, Hitchcock (left) does small cameos (like the meta-scene in <em>Vertigo</em> [1958] where he walks across the screen directly before the scene where the movie plot and psychological manipulation of the protagonist is revealed), while Woody Allen (right) likes to take main roles (<em>Annie Hall</em> [1977], <em>Manhattan</em> [1979]).</p>
+
+<p>Now, the fun part. Specific actors loved by specific directors for their ability to convey their unique filmatic messages. Side note, I quickly found out that academy award winning director Clint Eastwood’s favorite actor is science fiction superstar, Clint Eastwood, which I respect.</p>
+
+<p align="center">
+  <img src="https://github.com/poptcorn/poptcorn.github.io/blob/master/assets/post2/firefox.jpg?raw=true" alt="clint eastwood" />
+</p>
+
+<p>I’m using the network analysis tool Gephi, which takes a list of “nodes” (people) and analyzes “edges” (connections) between them. Initially I wanted to just shove all my directors and all my actors into this and look at all connections between them. But with 150k nodes and 400k edges, the visualization is 100% illegible and my laptop just can’t handle the rendering calculation. In the end I opted to only look at director-actor connections (ignoring actor-actor collaborations) and to only look at the ~50 most prolific directors in my dataset and ~60 most prolific actors in my data (I also toyed around with the top ~500 directors and ~6000 actors, with ~30k edges, which my laptop managed to choke out after an overnight run – but again, the visualization wasn’t suitable for a blog). This immediately removes a lot of my favorite directors and my personal impetus for this post (Tarantino - Jackson). But it’s what’s workable.</p>
+
+<p>Here is the network chart with colors representing total connections, and bubble-size representing total <em>incoming</em> connections (ie. acting in a movie makes the bubble bigger).</p>
+
+<p><img src="/assets/post2/actor_web2.png" alt="actor web" /></p>
+
+<p>And the same thing with <em>outgoing</em> connections increasing node-size:</p>
+
+<p><img src="/assets/post2/director_web2.png" alt="director web" /></p>
+
+<p>I was hoping to see a kind of pattern with different eras separated into blobs, and different localities in blobs (like a blob for Bollywood, and a blob for Japanese cinema). But since I’ve just amputated 99% of the data to make it legible and calculable, that geography doesn’t exist (also, see the prior post about lacking huge amounts of pre-1970s data). I <em>may</em> do a longrun on my work deck over some break to see if I can get this kind of picture, but that’s not really possible soon since it’s busy with actual work at the moment.</p>
+
+<p>As an aside, anyone notice a problem with the above? I said one of the most prolific directors was Alfred Hitchcock, and he’s not in our network chart anywhere. This is because of the limitation in our data set of only the 60 most prolific actors, so he actually doesn’t have many connections in the network we’re calculating. This is an example of a selection bias removing a strong signal.</p>
+
+<p>Anyways, I just explored these by eye, and saw some strong connections, tabulated below (Is it just me, or do a lot of directors’ favorite actors look suspiciously like themselves?):</p>
+
+<table>
+  <tbody>
+    <tr>
+      <td>Robert De Niro</td>
+      <td> </td>
+      <td>Martin Scorsese</td>
+    </tr>
+    <tr>
+      <td><img src="/assets/post2/deniro/deniro.jpg" alt="deniro" /></td>
+      <td><img src="/assets/post2/deniro/taxi76.jpg" alt="taxi driver (1976)" /></td>
+      <td><img src="/assets/post2/deniro/scorsese.jpg" alt="scorsese" /></td>
+    </tr>
+    <tr>
+      <td>Johnny Depp</td>
+      <td> </td>
+      <td>Tim Burton</td>
+    </tr>
+    <tr>
+      <td><img src="/assets/post2/depp/depp.jpg" alt="depp" /></td>
+      <td><img src="/assets/post2/depp/scissorhands90.jpg" alt="edward scissorhands (1990)" /></td>
+      <td><img src="/assets/post2/depp/burton.jpg" alt="burton" /></td>
+    </tr>
+    <tr>
+      <td>Tom Hanks</td>
+      <td> </td>
+      <td>Steven Spielberg</td>
+    </tr>
+    <tr>
+      <td><img src="/assets/post2/hanks/hanks.jpg" alt="hanks" /></td>
+      <td><img src="/assets/post2/hanks/ryan98.jpg" alt="saving private ryan (1998)" /></td>
+      <td><img src="/assets/post2/hanks/spielberg.jpg" alt="spielberg" /></td>
+    </tr>
+    <tr>
+      <td>John Wayne</td>
+      <td> </td>
+      <td>John Ford</td>
+    </tr>
+    <tr>
+      <td><img src="/assets/post2/wayne/wayne.jpg" alt="wayne" /></td>
+      <td><img src="/assets/post2/wayne/searchers56.jpg" alt="the searchers (1956)" /></td>
+      <td><img src="/assets/post2/wayne/ford.jpg" alt="ford" /></td>
+    </tr>
+  </tbody>
+</table>
+
+<hr />
+<hr />
+<p>I’d like to thank the themoviedb.org folks, who gave me access to their API which was relatively painless to use. I am not affiliated with them in any way and my opinions are my own. I’d also like to thank the developers and maintainers of: Python, Gephi, and matplotlib.</p>
+
+<table>
+  <tbody>
+    <tr>
+      <td>themoviedb.org</td>
+      <td>python.org</td>
+      <td>gephi.org</td>
+      <td>matplotlib.org</td>
+    </tr>
+    <tr>
+      <td><img src="/assets/credit/tmdb.png" alt="the movie db" /></td>
+      <td><img src="/assets/credit/python.png" alt="python" /></td>
+      <td><img src="/assets/credit/gephi.png" alt="gephi" /></td>
+      <td><img src="/assets/credit/mpl.png" alt="matplotlib" /></td>
+    </tr>
+  </tbody>
+</table>
+
+<hr />
+<hr />
+
+  </div>
+
+</article>
+
+      </div>
+    </main><footer class="site-footer h-card">
+  <data class="u-url" href="/"></data>
+
+  <div class="wrapper">
+
+    <h2 class="footer-heading">poptcorn.github.io</h2>
+
+    <div class="footer-col-wrapper">
+      <div class="footer-col footer-col-1">
+        <ul class="contact-list">
+          <li class="p-name">poptcorn.github.io</li><li><a class="u-email" href="mailto:poptcornATprotonmailDOTcom">poptcornATprotonmailDOTcom</a></li></ul>
+      </div>
+
+      <div class="footer-col footer-col-2"><ul class="social-media-list"></ul>
+</div>
+
+      <div class="footer-col footer-col-3">
+        <p></p>
+      </div>
+    </div>
+
+  </div>
+
+</footer>
+</body>
+
+</html>

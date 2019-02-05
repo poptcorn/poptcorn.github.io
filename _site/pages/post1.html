@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1"><!-- Begin Jekyll SEO tag v2.5.0 -->
+<title>Genres | poptcorn.github.io</title>
+<meta name="generator" content="Jekyll v3.7.4" />
+<meta property="og:title" content="Genres" />
+<meta property="og:locale" content="en_US" />
+<link rel="canonical" href="http://localhost:4000/pages/post1.html" />
+<meta property="og:url" content="http://localhost:4000/pages/post1.html" />
+<meta property="og:site_name" content="poptcorn.github.io" />
+<script type="application/ld+json">
+{"@type":"WebPage","url":"http://localhost:4000/pages/post1.html","headline":"Genres","@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+<link rel="stylesheet" href="/assets/main.css"><link type="application/atom+xml" rel="alternate" href="http://localhost:4000/feed.xml" title="poptcorn.github.io" /></head>
+<body><header class="site-header" role="banner">
+
+  <div class="wrapper"><a class="site-title" rel="author" href="/">poptcorn.github.io</a><nav class="site-nav">
+        <input type="checkbox" id="nav-trigger" class="nav-trigger" />
+        <label for="nav-trigger">
+          <span class="menu-icon">
+            <svg viewBox="0 0 18 15" width="18px" height="15px">
+              <path d="M18,1.484c0,0.82-0.665,1.484-1.484,1.484H1.484C0.665,2.969,0,2.304,0,1.484l0,0C0,0.665,0.665,0,1.484,0 h15.032C17.335,0,18,0.665,18,1.484L18,1.484z M18,7.516C18,8.335,17.335,9,16.516,9H1.484C0.665,9,0,8.335,0,7.516l0,0 c0-0.82,0.665-1.484,1.484-1.484h15.032C17.335,6.031,18,6.696,18,7.516L18,7.516z M18,13.516C18,14.335,17.335,15,16.516,15H1.484 C0.665,15,0,14.335,0,13.516l0,0c0-0.82,0.665-1.483,1.484-1.483h15.032C17.335,12.031,18,12.695,18,13.516L18,13.516z"/>
+            </svg>
+          </span>
+        </label>
+
+        <div class="trigger"><a class="page-link" href="/pages/post1.html">Genres</a><a class="page-link" href="/pages/post2.html">Best Friends</a><a class="page-link" href="/pages/post3.html">Gambling</a><a class="page-link" href="/pages/post4.html">Recommendations</a></div>
+      </nav></div>
+</header>
+<main class="page-content" aria-label="Content">
+      <div class="wrapper">
+        <article class="post">
+
+  <header class="post-header">
+    <h1 class="post-title">Genres</h1>
+  </header>
+
+  <div class="post-content">
+    <h2 id="genres">Genres</h2>
+
+<p><em>Genre – a class or category of artistic endeavor having a particular form, content, technique, or the like:</em></p>
+
+<p>This is my first post in a series of posts looking at movies and movie-data. In this opening, I’ll just be looking at the variables: genre, average rating and release year. I’m using data collected using the themoviedb.org API, I’ve collected all the entries with more than 50 rating votes, which is a data set of around 9,000 movies.</p>
+
+<p>So, firstly, let’s just look at the distribution of release years in these data:</p>
+
+<p><img src="/assets/post1/years.png" alt="distribution by year" /></p>
+
+<p>I don’t think this year distribution really has much meaning, but it looks like what I would expect. I don’t know if we’re are making more films per year as we progress, but I would think that more recent movies are more likely to: a) be entered into this database at all, b) have accrued the 50 votes needed to be in my data set. This is just because of current awareness of movies and the age of the database.</p>
+
+<p>This is related to the distribution of ratings by year as well. The films most likely to be in the public consciousness from half a century ago are probably the outstandingly good or the outstandingly bad — the memorable ones — and the ones most likely to be recirculated by, say, the <em>Criterion Collection</em>, are probably the better ones. Niche exceptions like <em>MST3K</em> or <em>Movie Macabre</em> exist, but I think they’re viewed by a much smaller audience than the <em>Criterion Collection</em>. This leads to a “good old days” effect on the average rating by year.</p>
+
+<p><img src="/assets/post1/average_vote.png" alt="average vote by year" /></p>
+
+<p>The ratings distribution [(Average, S.D) = (6.35, 0.89)] is close to a Gaussian, but not quite. It’s centered about a standard deviation above the naive average (50%, or 55% on a 1-10 star system), which perhaps says something optimistic about the collective subconscious. However, note the dearth of ratings above 80%, preceded by a sort of cliff at 75%. It seems that people are happy to rate movies as “slightly enjoyable” but turn extremely discerning when asked to rate something as “superb.” Also, there is some hesitance to absolutely thrash a film, the amount of ratings below 40% is, by eye, about the same as above 80%.</p>
+
+<p><img src="/assets/post1/ratings.png" alt="ratings distribution" /></p>
+
+<p>Now, onto genres. The distribution of genres and the scores these genres tend to get:</p>
+
+<p><img src="/assets/post1/pie92.png" alt="pie plot" /></p>
+
+<p>This pie chart represents all the available genres in my data set (labeled on the exterior). The wedges are centered on the average score each genre gets, and the radial extent of the wedges indicates the spread of scores. The global average and range (the Gaussian) are indicated by the solid and dashed circles respectively. The color is also representative of the average score. The angular extent indicates how many films in the data set fall into that particular genre.</p>
+
+<p>So a big wedge means we get a lot of movies in that genre. A wedge that is near the center usually gets worse ratings, and a wedge near the outside gets higher ratings. A tall wedge means the genre has lots of good movies and lots of not so good movies. A short wedge is a consistent genre.</p>
+
+<p>This seems about right, the more “cultured” things like Music, Documentary, History, Foreign are rated more highly. But the bulk of our entertainment intake is coming from the low-investment stuff Comedy, Thriller, Drama, Action. Although, I feel bad for Horror (5.83), losing out in ratings even to straight to TV features (5.98)… Bad luck, Horror.</p>
+
+<p>Something cool to look at is the popularity of genres as a function of year:</p>
+
+<p><img src="/assets/post1/animated.gif" alt="popularity gif" /></p>
+
+<p>I went ahead and smoothed this with a decade-wide window and I saw a few things that were interesting, but not entirely unexpected, certain genres have fairly constant popularity, like Action and Comedy, while other genres…</p>
+
+<p><img src="/assets/post1/western.png" alt="western" /></p>
+
+<p>We have the 1950s/1960s golden age of the Western with <em>High Noon</em> (1952), <em>Shane</em> (1953), <em>3:10 to Yuma</em> (1957). Then in the 1960s Sergio Leone’s iconic <em>Dollars Trilogy</em> (1964, 1965, 1966) is hunkered right in the middle along with, <em>The Man Who Shot Liberty Valance</em> (1962), <em>Once Upon a Time in the West</em> (1968), <em>True Grit</em> (1969).</p>
+
+<p><img src="/assets/post1/history.png" alt="history" /></p>
+
+<p>History also peaked real hard around the 1960s, I wonder if that’s because of all those hefty epic-length pieces like <em>The Bridge on the River Kwai</em> (1957, 2.6 hours), <em>Ben Hur</em> (1959, 3.5 hours), <em>Spartacus</em> (1960, 3.3 hours), <em>Lawrence of Arabia</em> (1962, 3.5 hours)…</p>
+
+<p><img src="/assets/post1/horror.png" alt="horror" /></p>
+
+<p>Horror seems to go in cycles, with Hitchcock defining the 1960s with psychological pieces like <em>Psycho</em> (1960), <em>The Birds</em> (1963). Then in the 1980s we saw the rise of the slashers: <em>Halloween I-V</em> (1979, 1981, 1982, 1988, 1989), <em>Friday the 13th</em> (1980, 1981, 1982, 1984, 1985, 1986, 1988, 1989 [wow]). And of course, possibly the most obsessed over film of all time, Kubrick’s ‘autobiographical’ manifesto <em>The Shining</em> (1980) dropping right at the all-time peak of horror popularity.</p>
+
+<p>So when it feels like every time <em>The Illusionist</em> (Aug. 2006) comes out someone else comes in with <em>The Prestige</em> (Oct. 2006), or you get a sense of deja-vu when <em>The Red Planet</em> (Nov. 2000) starts rolling immediately after <em>Mission to Mars</em> (Mar. 2000), this might be why. Sorry <em>Antz</em> (Oct. 1998), everyone remembers you as <em>A Bug’s Life</em> (Nov. 1998) now.</p>
+
+<p>Some genres are also cycle through in tandem like…</p>
+
+<p><img src="/assets/post1/1980s.png" alt="the 1980s" /></p>
+
+<p>In the 1980s Sci-Fi is at a zenith along with Horror: <em>Star Wars</em> (1977, 1980, 1983), <em>Bladerunner</em> (1982), <em>E.T.</em> (1982) <em>Terminator</em> (1984), <em>Ghostbusters</em> (1984, 1989), <em>Back to the Future</em> (1985, 1989), <em>Aliens</em> (1986). And Sci-Fi Horror hybrids like <em>Videodrome</em> (1983), <em>Reanimator</em> (1985), <em>They Live</em> (1988) and the towering <em>Alien</em> (1979).</p>
+
+<p><img src="/assets/post1/noir.png" alt="film noir" /></p>
+
+<p>We see film Noir in the Crime and Mystery genres peaking together in the 1940s, never to return to their former glory. <em>The Maltese Falcon</em> (1941), <em>Double Indemnity</em> (1944), <em>Gaslight</em> (1944), <em>Notorious</em> (1946), <em>The Big Sleep</em> (1946), <em>The Third Man</em> (1949). Not sure why this fell out of fashion, but it’s worth noting that Action and Adventure rose in popularity as genres prodigiously from 1950-1970.</p>
+
+<p>So, what can we say about current trends? The most striking thing to me is the meteoric rise of the Documentary. They’re being made proportionally more and more every year (perhaps owing to the lowering cost of video production) and they’re consistently one of the highest scoring genres. The earliest documentaries that come to my mind are the Vietnam war documentary pieces which were instrumental in swaying public opinion about the war. Modern documentaries meanwhile, have an enormous range of topics. I think it’s interesting that this rise in documentary popularity coincides with the rise of internet access in the post-2000 world. Not only do we have nearly unlimited information available to us, people seem willing and eager to invest time in learning new things… well, for a comfortably allotted 2 hours at least.</p>
+
+<p><img src="/assets/post1/documentary.png" alt="documentary" /></p>
+
+<p>Finally, just for a laugh, in the unsmoothed distributions of the ratings as a function of year (to see if any genres had spectacularly acclaimed years) I saw two strange years that led to hilarious discoveries:</p>
+
+<p><img src="/assets/post1/manos.png" alt="manos" /></p>
+
+<p>As verified purchaser Sean D on Amazon described Manos: <em>“I believe this was shot on 8mm film by some college students. The acting is atrocious with a capital A. All of the dialogue was dubbed in after filming. Unless you’re incredibly stoned, avoid this one.”</em></p>
+
+<p><img src="/assets/post1/starwars.png" alt="star wars holiday special" /></p>
+
+<p>aj_guy3181 on IMDb had this to say about The Star Wars Holiday Special: <em>“The effects are so bad they are hilarious and there seems to be some type of odd porn scene involving Chewbaca’s father and some 70’s Disco Queen. I watched most of the program with my mouth hanging wide open in utter disbelief. The rest of the time I was laughing at just how awful the whole thing really is.”</em></p>
+
+<p>I guess I know what I’m watching this weekend.</p>
+
+<hr />
+<hr />
+
+<p>I’d like to thank the themoviedb.org folks, who gave me access to their API which was relatively painless to use. I am not affiliated with them in any way and my opinions are my own. I’d also like to thank the developers and maintainers of: Python, NumPy, and matplotlib.</p>
+
+<table>
+  <tbody>
+    <tr>
+      <td>themoviedb.org</td>
+      <td>python.org</td>
+      <td>numpy.org</td>
+      <td>matplotlib.org</td>
+    </tr>
+    <tr>
+      <td><img src="/assets/credit/tmdb.png" alt="the movie db" /></td>
+      <td><img src="/assets/credit/python.png" alt="python" /></td>
+      <td><img src="/assets/credit/numpy.png" alt="numpy" /></td>
+      <td><img src="/assets/credit/mpl.png" alt="matplotlib" /></td>
+    </tr>
+  </tbody>
+</table>
+
+<hr />
+<hr />
+
+  </div>
+
+</article>
+
+      </div>
+    </main><footer class="site-footer h-card">
+  <data class="u-url" href="/"></data>
+
+  <div class="wrapper">
+
+    <h2 class="footer-heading">poptcorn.github.io</h2>
+
+    <div class="footer-col-wrapper">
+      <div class="footer-col footer-col-1">
+        <ul class="contact-list">
+          <li class="p-name">poptcorn.github.io</li><li><a class="u-email" href="mailto:poptcornATprotonmailDOTcom">poptcornATprotonmailDOTcom</a></li></ul>
+      </div>
+
+      <div class="footer-col footer-col-2"><ul class="social-media-list"></ul>
+</div>
+
+      <div class="footer-col footer-col-3">
+        <p></p>
+      </div>
+    </div>
+
+  </div>
+
+</footer>
+</body>
+
+</html>

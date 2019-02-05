@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1"><!-- Begin Jekyll SEO tag v2.5.0 -->
+<title>Gambling | poptcorn.github.io</title>
+<meta name="generator" content="Jekyll v3.7.4" />
+<meta property="og:title" content="Gambling" />
+<meta property="og:locale" content="en_US" />
+<link rel="canonical" href="http://localhost:4000/pages/post3.html" />
+<meta property="og:url" content="http://localhost:4000/pages/post3.html" />
+<meta property="og:site_name" content="poptcorn.github.io" />
+<script type="application/ld+json">
+{"@type":"WebPage","url":"http://localhost:4000/pages/post3.html","headline":"Gambling","@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+<link rel="stylesheet" href="/assets/main.css"><link type="application/atom+xml" rel="alternate" href="http://localhost:4000/feed.xml" title="poptcorn.github.io" /></head>
+<body><header class="site-header" role="banner">
+
+  <div class="wrapper"><a class="site-title" rel="author" href="/">poptcorn.github.io</a><nav class="site-nav">
+        <input type="checkbox" id="nav-trigger" class="nav-trigger" />
+        <label for="nav-trigger">
+          <span class="menu-icon">
+            <svg viewBox="0 0 18 15" width="18px" height="15px">
+              <path d="M18,1.484c0,0.82-0.665,1.484-1.484,1.484H1.484C0.665,2.969,0,2.304,0,1.484l0,0C0,0.665,0.665,0,1.484,0 h15.032C17.335,0,18,0.665,18,1.484L18,1.484z M18,7.516C18,8.335,17.335,9,16.516,9H1.484C0.665,9,0,8.335,0,7.516l0,0 c0-0.82,0.665-1.484,1.484-1.484h15.032C17.335,6.031,18,6.696,18,7.516L18,7.516z M18,13.516C18,14.335,17.335,15,16.516,15H1.484 C0.665,15,0,14.335,0,13.516l0,0c0-0.82,0.665-1.483,1.484-1.483h15.032C17.335,12.031,18,12.695,18,13.516L18,13.516z"/>
+            </svg>
+          </span>
+        </label>
+
+        <div class="trigger"><a class="page-link" href="/pages/post1.html">Genres</a><a class="page-link" href="/pages/post2.html">Best Friends</a><a class="page-link" href="/pages/post3.html">Gambling</a><a class="page-link" href="/pages/post4.html">Recommendations</a></div>
+      </nav></div>
+</header>
+<main class="page-content" aria-label="Content">
+      <div class="wrapper">
+        <article class="post">
+
+  <header class="post-header">
+    <h1 class="post-title">Gambling</h1>
+  </header>
+
+  <div class="post-content">
+    <h2 id="gambling">Gambling</h2>
+
+<p>In this post, I wanted to look at how possible it is to predict a film’s success based on attributes we know before release.</p>
+
+<p>The first thing to do would be to look at a simple correlation matrix of the numeric variables to see if any are obviously correlated. For the input variables we have: budget, runtime, number of directors, number of actors, and number of writers. For prediction variables we have: revenue, average vote, number of votes, and percent profit.</p>
+
+<p><img src="/assets/post3/corr_matrix_cmap_annotated.png" alt="correlation matrix" /></p>
+
+<p>I immediately noticed three things in this correlation matrix:</p>
+<ol>
+  <li>Budget is a decent predictor of <em>revenue</em> (it’s also a good predictor of number of votes, I guess higher budget movies have more advertising which increases both of those), but it’s <em>negatively correlated with the average vote and the percent profit at the end.</em></li>
+  <li>Running time is strongly correlated with the final average score, but not very correlated with percent profit.</li>
+  <li>The number of writers is positively correlated with the revenue but inversely correlated with the final rating. Having multiple directors is also more correlated with higher revenue.</li>
+</ol>
+
+<p>Also, it looks like number of votes, budget, and revenue are all highly correlated. This makes sense for high profile films with large advertising campaigns.</p>
+
+<p>Anyways, to see if we can predict the success of a film based on the inputs, I just quickly implemented a few simple regressors. Out of our dataset of ~23 thousand items, ~3 thousand have a complete set of attributes. We split this into a training set and and a testing set, and success was determined by the Pearson correlation coefficient between the estimated and true values of the testing set. The algorithms are just a nearest neighbor and the scikit-learn bayesian regression, adaboost.R2 regression, and random forest regression.</p>
+
+<p>We tabulate the average Pearson correlation coefficients of the predicted and actual values for revenue, percent profit (revenue/budget), and average rating, for a few different training and testing set iterations.</p>
+
+<!-- Algorithm | Revenue | Percent Profit | Rating |
+Nearest Neighbor | .54 | .12 | .27 |
+AdaBoosted Trees | .61 | .28 | .46 |
+Bayesian Ridge | .71 | .19 | .38 |
+Random Forest | .76 | .31 | .49 | -->
+
+<p align="center">
+  <img src="https://github.com/poptcorn/poptcorn.github.io/blob/master/assets/post3/cantcentertablesii.png?raw=true" alt="table center" />
+</p>
+
+<p>In the past, on other problems, I’ve tended to have good success with the random forest method, and it seems to perform well on these data as well. All of these predictors work substantially better than the nearest neighbor. As an example of the predictors, we plot the estimations of the different algorithms.</p>
+
+<p><img src="/assets/post3/algo_predictions.png" alt="algo predictions" /></p>
+
+<p>Visually, the random forest and adaboosted trees both perform decently (well better than random) at predicting the final score of a film based on the input data of: budget, runtime, number of directors, number of actors, and number of writers. That’s pretty interesting by itself since it means you can predict something about the final score of a film without knowing anyone involved or the genre or any of the information people usually look at when deciding to watch a film.</p>
+
+<p>After this, I’m just going to focus on the rating as the metric for success since I’m more interested in that than the revenue or profitability.</p>
+
+<p>So, let’s go ahead and look at the average and deviations of film ratings for directors.</p>
+
+<p><img src="/assets/post3/directors.png" alt="director scores" /></p>
+
+<p>Now, I wasn’t going to point out the lowest average rating directors, but the second lowest average was M. Night Shyamalan and that seems completely unfair to me. Say what you will, <em>Unbreakable</em> [2000] was a masterpiece.</p>
+
+<p>The actors and writers have similar distributions sort of flaring out from a point at high-ratings, low variability toward lower ratings and with a higher spread in variability. The actor plot has too many points to be fun, and quite honestly I don’t recognize a lot of the writers, so we’ll just move on.</p>
+
+<table>
+  <tbody>
+    <tr>
+      <td><img src="/assets/post3/writers.png" alt="writers" /></td>
+      <td><img src="/assets/post3/actors.png" alt="actors" /></td>
+    </tr>
+  </tbody>
+</table>
+
+<p>Using this information, I’ve assigned every actor, director, and writer a personal score which is the average of all the films they’ve been in. Then, I’ve given each film in the training and testing sets an average actor, director, and writer score based on who’s in the film. Some improvement could probably be made using a weighted average based on how many films the different actors have been in as well. Or a better way would actually be to add the probability densities (from, say, the actors’ averages and spreads) to find the best [actor] score.</p>
+
+<p>There is a caveat that I’m actually cheating a bit here. I’m calculating an actor / director / writer score based on the entire career of that person, not just up until the release date of the movies that we are attempting to predict a rating for. So an actor’s weighted rating is calculated using information from the films we are trying to predict weightings for. <strong>That’s a big no-no.</strong> A more proper technique would be to redefine a training set for each movie consisting of all movies released prior to it and recalculating the actor / director / writer scores based on this subset. I’m not doing it that way because it’s just too computationally time intensive at the moment.</p>
+
+<p>Adding this information into the random forest yields some pretty impressive predictive ability. We have a <strong>correlation coefficient of about 0.8</strong> (compared to ~0.5 without the actor, director, and writer score averages for the same random forest algorithm) between our predicted film rating and the actual film rating.</p>
+
+<p><img src="/assets/post3/best_forest.png" alt="improved forest" /></p>
+
+<p>There’re a few interesting outliers to the algorithm (to this particular training-testing set iteration). Most notably I would say are: (1) <em>Speed 2</em> [1997] which had high profile actors Sandra Bullock and Willem Dafoe which possibly buoyed the predicted score; and (2) <em>Dead Poets Society</em> [1989] which might have been predicted too low because of Robin Williams’ comedy career (since comedy generally scores quite a bit lower than drama).</p>
+
+<p>There is more information that could be added into this predictor, for example the <a href="https://poptcorn.github.io/pages/post1.html">genre</a> of the film tends to have an effect on the audience rating. We could also overtrain by considering the release date, which we have seen before is biased to higher scores for older movies (which I would say is only relevant in this data set, and doesn’t help with predicting new film scores). Or there might also be a title effect, I would expect sequels to have longer titles on average (including subtitles) and lower scores on average.</p>
+
+<p>That aside, in the end, I would have to say <em>yes, we can predict with reasonable accuracy if a random film will end up being a highly rated film or not.</em> In my opinion this doesn’t really mean much though, since some of the best films are not highly rated, like some of my personal favorites below.</p>
+
+<table>
+  <tbody>
+    <tr>
+      <td><em>Buckaroo Banzai</em><br />(1984; 64%)</td>
+      <td><em>Knightriders</em><br />(1981; 62%)</td>
+      <td><em>The Postman</em><br />(1997; 61%)</td>
+      <td><em>Stripes</em><br />(1981; 65%)</td>
+    </tr>
+    <tr>
+      <td><img src="/assets/post3/buckaroo.jpg" alt="buckaroo" /></td>
+      <td><img src="/assets/post3/knightriders.jpg" alt="knightriders" /></td>
+      <td><img src="/assets/post3/postman.jpg" alt="postman" /></td>
+      <td><img src="/assets/post3/stripes.jpg" alt="stripes" /></td>
+    </tr>
+  </tbody>
+</table>
+
+<hr />
+<hr />
+<p>I’d like to thank the themoviedb.org folks, who gave me access to their API which was relatively painless to use. I am not affiliated with them in any way and my opinions are my own. I’d also like to thank the developers and maintainers of: Python, scikit-learn, and matplotlib.</p>
+
+<table>
+  <tbody>
+    <tr>
+      <td>themoviedb.org</td>
+      <td>python.org</td>
+      <td>scikit-learn.org</td>
+      <td>matplotlib.org</td>
+    </tr>
+    <tr>
+      <td><img src="/assets/credit/tmdb.png" alt="the movie db" /></td>
+      <td><img src="/assets/credit/python.png" alt="python" /></td>
+      <td><img src="/assets/credit/scikit.png" alt="gephi" /></td>
+      <td><img src="/assets/credit/mpl.png" alt="matplotlib" /></td>
+    </tr>
+  </tbody>
+</table>
+
+<hr />
+<hr />
+
+  </div>
+
+</article>
+
+      </div>
+    </main><footer class="site-footer h-card">
+  <data class="u-url" href="/"></data>
+
+  <div class="wrapper">
+
+    <h2 class="footer-heading">poptcorn.github.io</h2>
+
+    <div class="footer-col-wrapper">
+      <div class="footer-col footer-col-1">
+        <ul class="contact-list">
+          <li class="p-name">poptcorn.github.io</li><li><a class="u-email" href="mailto:poptcornATprotonmailDOTcom">poptcornATprotonmailDOTcom</a></li></ul>
+      </div>
+
+      <div class="footer-col footer-col-2"><ul class="social-media-list"></ul>
+</div>
+
+      <div class="footer-col footer-col-3">
+        <p></p>
+      </div>
+    </div>
+
+  </div>
+
+</footer>
+</body>
+
+</html>
