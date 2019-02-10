@@ -47,7 +47,7 @@ The token similarity will compare all the words in the two film descriptions in 
 </p>
 
 
-This should hopefully help to find completely unrelated movies which share high-information descriptors, for example the words "planet" and "laser" are both used in the unconnected films:
+f here is the frequency of the words in each description. This should hopefully help to find completely unrelated movies which share high-information descriptors, for example the words "planet" and "laser" are both used in the unconnected films:
 
 Howard the Duck (1986) | Plan 9 (2015)
 ![howard the duck](../assets/post4/howardtheduck.jpg) | ![plan 9](../assets/post4/plan9.jpg)
