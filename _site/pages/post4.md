@@ -1,7 +1,7 @@
 Recommendations
 ---
 
-<iframe src="https://poptcorn.github.io/assets/post4/test.html" width="750" height="400" align="center" frameBorder="0"></iframe>
+<iframe src="https://poptcorn.github.io/assets/post4/recommend.html" width="750" height="400" align="center" frameBorder="0"></iframe>
 
 
 Go ahead and try out this movie recommendation engine by typing the [exact title](../assets/post4/title_list.txt) of a movie into the textbox and hitting enter. The resulting recommendations can be clicked to take you to the TMDB movie page for those films.
