@@ -1,0 +1,14 @@
+Recommendations
+---
+
+<iframe src="https://poptcorn.github.io/assets/post4/test.html" width="100%" height="600"></iframe>
+
+
+
+In this post I wanted to make a movie recommendation engine.
+
+I suspect that most movie recommendation engines learn from user interaction over time, which, overall, probably yields fairly helpful suggestions. But I find some movie recommendation sites to be particularly weak with regards to current films. Often, current films seem to yield suggestions for other films that were in theaters at the same time, rather than films that are actually similar to the one in question.
+
+Whether or not that's 'working as intended' is up to
+
+For my recommendation engine, I did some brief calculations and found the objectively speaking 100% provably correct determination of similarity between films to be:
