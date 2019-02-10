@@ -49,6 +49,10 @@
 <table>
   <tbody>
     <tr>
+      <td>The Avengers (2012)</td>
+      <td>The Avengers (1998)</td>
+    </tr>
+    <tr>
       <td><img src="/assets/post4/avengers1.jpg" alt="avengers 1" /></td>
       <td><img src="/assets/post4/avengers2.jpg" alt="avengers 2" /></td>
     </tr>
@@ -59,6 +63,11 @@
 
 <table>
   <tbody>
+    <tr>
+      <td>Journey to the Center of the Earth (2008)</td>
+      <td>Journey to the Center of the Earth (2008)</td>
+      <td>Journey to the Center of the Earth (2008)</td>
+    </tr>
     <tr>
       <td><img src="/assets/post4/journey1.jpg" alt="journey 1" /></td>
       <td><img src="../assets/post4/journey2.png" alt="journey 2" /></td>
@@ -102,6 +111,10 @@
 <table>
   <tbody>
     <tr>
+      <td>Howard the Duck (1986)</td>
+      <td>Plan 9 (2015)</td>
+    </tr>
+    <tr>
       <td><img src="/assets/post4/howardtheduck.jpg" alt="howard the duck" /></td>
       <td><img src="/assets/post4/plan9.jpg" alt="plan 9" /></td>
     </tr>
@@ -113,6 +126,10 @@
 <table>
   <tbody>
     <tr>
+      <td>Blade Runner (1982)</td>
+      <td>Furious 7 (2015)</td>
+    </tr>
+    <tr>
       <td><img src="/assets/post4/bladerunner.jpg" alt="blade runner" /></td>
       <td><img src="/assets/post4/furious7.jpg" alt="furious 7" /></td>
     </tr>
@@ -121,7 +138,7 @@
 
 <p>The token similarity is then renormalized by dividing by the maximum possible token similarity in the data, so the token distance between any two films is now a value between zero and one.</p>
 
-<p>We finally add similarity factors for the rating and release date, so that the engine will have some weight for similarly rated and released films. We use a square root and a square power for the vote and date differences, respectively (so it will more sharply discriminate between similarly rated films, and less sharply between similar release dates):</p>
+<p>I finally add similarity factors for the rating and release date, so that the engine will have some weight for similarly rated and released films. I use a square root and a square power for the vote and date differences, respectively (so it will more sharply discriminate between similarly rated films, and less sharply between similar release dates):</p>
 
 <table>
   <tbody>

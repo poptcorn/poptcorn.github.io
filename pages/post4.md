@@ -8,10 +8,12 @@ Go ahead and try out this movie recommendation engine above by typing the [exact
 
 Note that you must type in the year of the film as well since:
 
+The Avengers (2012) | The Avengers (1998)
 ![avengers 1](../assets/post4/avengers1.jpg) | ![avengers 2](../assets/post4/avengers2.jpg)
 
 But even that is imperfect because, in 2008, for example:
 
+Journey to the Center of the Earth (2008) | Journey to the Center of the Earth (2008) | Journey to the Center of the Earth (2008)
 ![journey 1](../assets/post4/journey1.jpg) | ![journey 2](../assets/post4/journey2.png) | ![journey 3](../assets/post4/journey3.jpg)
 
 Caveat emptor I guess.
@@ -47,15 +49,17 @@ The token similarity will compare all the words in the two film descriptions in 
 
 This should hopefully help to find completely unrelated movies which share high-information descriptors, for example the words "planet" and "laser" are both used in the unconnected films:
 
+Howard the Duck (1986) | Plan 9 (2015)
 ![howard the duck](../assets/post4/howardtheduck.jpg) | ![plan 9](../assets/post4/plan9.jpg)
 
 However, there are also some foibles, for example these two films are closest neighbors by the token analysis, because the token "Deckard" is extremely rare:
 
+Blade Runner (1982) | Furious 7 (2015)
 ![blade runner](../assets/post4/bladerunner.jpg) | ![furious 7](../assets/post4/furious7.jpg)
 
 The token similarity is then renormalized by dividing by the maximum possible token similarity in the data, so the token distance between any two films is now a value between zero and one.
 
-We finally add similarity factors for the rating and release date, so that the engine will have some weight for similarly rated and released films. We use a square root and a square power for the vote and date differences, respectively (so it will more sharply discriminate between similarly rated films, and less sharply between similar release dates):
+I finally add similarity factors for the rating and release date, so that the engine will have some weight for similarly rated and released films. I use a square root and a square power for the vote and date differences, respectively (so it will more sharply discriminate between similarly rated films, and less sharply between similar release dates):
 
 ![vote function](../assets/post4/vote_fn.png) | ![date function](../assets/post4/date_fn.png)
 
