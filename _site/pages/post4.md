@@ -1,24 +1,6 @@
 Recommendations
----
 
-<iframe src="https://poptcorn.github.io/assets/post4/recommend.html" width="750" height="400" align="center" frameBorder="0"></iframe>
-
-
-Go ahead and try out this movie recommendation engine above by typing the [exact title](../assets/post4/title_list.txt) of a movie ("The Thing (1982)" without the quote marks, for example) into the textbox and hitting enter. The resulting recommendations can be clicked to take you to the TMDB movie page for those films.
-
-Note that you must type in the year of the film as well since:
-
-The Avengers (2012) | The Avengers (1998)
-![avengers 1](../assets/post4/avengers1.jpg) | ![avengers 2](../assets/post4/avengers2.jpg)
-
-But even that is imperfect because, in 2008, for example:
-
-Journey to the Center of the Earth (2008) | Journey to the Center of the Earth (2008) | Journey to the Center of the Earth (2008)
-![journey 1](../assets/post4/journey1.jpg) | ![journey 2](../assets/post4/journey2.png) | ![journey 3](../assets/post4/journey3.jpg)
-
-Caveat emptor I guess.
-
----
+<a href="#recommender_anchor">TLDR go to the recommender.</a>
 
 In this post I wanted to make a movie recommendation engine.
 
@@ -74,10 +56,30 @@ These similarity factors are combined into a total similarity measure:
 
 The constants can be tweaked around to put various weightings on personal preference to highlight films by the same director, or with similar actors, or descriptions, etc.
 
+<a id="recommender_anchor"></a>
+
+Here, is the finished product:
+
+<iframe src="https://poptcorn.github.io/assets/post4/recommend.html" width="750" height="400" align="center" frameBorder="0"></iframe>
+
+Go ahead and try out this movie recommendation engine above by typing the [exact title](../assets/post4/title_list.txt) of a movie ("The Thing (1982)" without the quote marks, for example) into the textbox and hitting enter. The resulting recommendations can be clicked to take you to the TMDB movie page for those films.
+
+Note that you must type in the year of the film as well since:
+
+The Avengers (2012) | The Avengers (1998)
+![avengers 1](../assets/post4/avengers1.jpg) | ![avengers 2](../assets/post4/avengers2.jpg)
+
+But even that is imperfect because, in 2008, for example:
+
+Journey to the Center of the Earth (2008) | Journey to the Center of the Earth (2008) | Journey to the Center of the Earth (2008)
+![journey 1](../assets/post4/journey1.jpg) | ![journey 2](../assets/post4/journey2.png) | ![journey 3](../assets/post4/journey3.jpg)
+
+Caveat emptor I guess.
+
 
 ---
 ---
-I’d like to thank the themoviedb.org folks, who gave me access to their API which was relatively painless to use. I am not affiliated with them in any way and my opinions are my own. I’d also like to thank the developers and maintainers of: Python, scikit-learn, and matplotlib.
+I’d like to thank the themoviedb.org folks, who gave me access to their API which was relatively painless to use. I am not affiliated with them in any way and my opinions are my own. I’d also like to thank the developers and maintainers of: Python, bokeh, and matplotlib.
 
 themoviedb.org | python.org | bokeh.pydata.org | matplotlib.org
 ![the movie db](../assets/credit/tmdb.png) | ![python](../assets/credit/python.png) | ![gephi](../assets/credit/bokeh.png) | ![matplotlib](../assets/credit/mpl.png)
