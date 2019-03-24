@@ -3,23 +3,93 @@ Impressions
 
 Here I thought I'd just do something simple and ...
 
+---
+# Mystery
 ![Mystery](../assets/post5/Mystery.png)
+
+
+---
+# Documentary
 ![Documentary](../assets/post5/Documentary.png)
+
+---
+# Foreign
 ![Foreign](../assets/post5/Foreign.png)
+
+---
+# Drama
 ![Drama](../assets/post5/Drama.png)
+
+---
+# Animation
 ![Animation](../assets/post5/Animation.png)
+
+---
+# Action
 ![Action](../assets/post5/Action.png)
+
+---
+# Music
 ![Music](../assets/post5/Music.png)
+
+---
+# Fantasy
 ![Fantasy](../assets/post5/Fantasy.png)
+
+---
+# Romance
 ![Romance](../assets/post5/Romance.png)
+
+---
+# Crime
 ![Crime](../assets/post5/Crime.png)
+
+---
+# Adventure
 ![Adventure](../assets/post5/Adventure.png)
+
+---
+# History
 ![History](../assets/post5/History.png)
+
+---
+# TV Movie
 ![TV Movie](../assets/post5/TV Movie.png)
+
+---
+# Comedy
 ![Comedy](../assets/post5/Comedy.png)
+
+---
+# Science Fiction
 ![Science Fiction](../assets/post5/Science Fiction.png)
+
+---
+# Western
 ![Western](../assets/post5/Western.png)
+
+---
+# Family
 ![Family](../assets/post5/Family.png)
+
+---
+# Horror
 ![Horror](../assets/post5/Horror.png)
+
+---
+# War
 ![War](../assets/post5/War.png)
+
+---
+# Thriller
 ![Thriller](../assets/post5/Thriller.png)
+
+---
+---
+I’d like to thank the themoviedb.org folks, who gave me access to their API which was relatively painless to use. I am not affiliated with them in any way and my opinions are my own. I’d also like to thank the developers and maintainers of: Python, word_cloud.
+
+themoviedb.org | python.org | https://github.com/amueller/word_cloud | matplotlib.org
+![the movie db](../assets/credit/tmdb.png) | ![python](../assets/credit/python.png) | ![numpy](../assets/credit/numpy.png) | ![matplotlib](../assets/credit/mpl.png)
+
+---
+---

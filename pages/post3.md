@@ -69,7 +69,7 @@ That aside, in the end, I would have to say *yes, we can predict with reasonable
 ---
 I’d like to thank the themoviedb.org folks, who gave me access to their API which was relatively painless to use. I am not affiliated with them in any way and my opinions are my own. I’d also like to thank the developers and maintainers of: Python, scikit-learn, and matplotlib.
 
-themoviedb.org | python.org | scikit-learn.org | matplotlib.org
+[themoviedb](https://www.themoviedb.org) | [python](https://www.python.org) | [scikit-learn](https://scikit-learn.org/stable/index.html) | [matplotlib](https://www.matplotlib.org)
 ![the movie db](../assets/credit/tmdb.png) | ![python](../assets/credit/python.png) | ![gephi](../assets/credit/scikit.png) | ![matplotlib](../assets/credit/mpl.png)
 
 ---

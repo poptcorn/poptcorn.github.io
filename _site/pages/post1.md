@@ -81,7 +81,7 @@ I guess I know what I’m watching this weekend.
 
 I’d like to thank the themoviedb.org folks, who gave me access to their API which was relatively painless to use. I am not affiliated with them in any way and my opinions are my own. I’d also like to thank the developers and maintainers of: Python, NumPy, and matplotlib.
 
-themoviedb.org | python.org | numpy.org | matplotlib.org
+[themoviedb](https://www.themoviedb.org) | [python](https://www.python.org) | [numpy](https://www.numpy.org) | [matplotlib](https://www.matplotlib.org)
 ![the movie db](../assets/credit/tmdb.png) | ![python](../assets/credit/python.png) | ![numpy](../assets/credit/numpy.png) | ![matplotlib](../assets/credit/mpl.png)
 
 
