@@ -5,7 +5,7 @@ Here I thought I'd just do something simple and make some word-clouds for each g
 
 Name tokens like this (i.e. 'Sherlock,' 'Scooby,' 'Poirot,' 'Kolchak' in the mystery genre) will often have the highest genre-specific-frequencies, so we only accept tokens which occur more than 100 times in the total data set. Then our word clouds look about right with words like 'investigate,' 'murder,' and 'detective.'
 
-Here is a little thumbnail gallery, and farther down the page, beneath the thanks section, you can scroll through them all.
+Here is a little thumbnail gallery.
 
 
 Action | Adventure | Animation
