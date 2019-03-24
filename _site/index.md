@@ -11,10 +11,10 @@ Website about exploring the data behind movies. Brief analyses of the themoviedb
 ---
 The following software was used in the making of this blog.
 
-themoviedb.org | python.org | numpy.org | scipy.org | jekyllrb.com
+[themoviedb](https://www.themoviedb.org) | [python](https://www.python.org) | [numpy](https://www.numpy.org) | [scipy](https://www.scipy.org) | [jekyll](https://www.jekyllrb.com)
 ![the movie db](../assets/credit/tmdb.png) | ![python](../assets/credit/python.png) | ![numpy](../assets/credit/numpy.png) | ![scipy](../assets/credit/scipy.png) | ![jekyll](../assets/credit/jekyll.png)
 
-pandas.pydata.org | scikit-learn.org | bokeh.pydata.org | matplotlib.org | github.com
+[pandas](https://pandas.pydata.org) | [scikit-learn](https://scikit-learn.org/stable/index.html) | [bokeh](https://bokeh.pydata.org/en/latest/) | [matplotlib](https://www.matplotlib.org) | [github](https://github.com)
 ![pandas](../assets/credit/pandas.png) | ![scikit-learn](../assets/credit/scikit.png) | ![bokeh](../assets/credit/bokeh.png) | ![matplotlib](../assets/credit/mpl.png) | ![github](../assets/credit/github.png)
 
 ---
