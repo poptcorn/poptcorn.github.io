@@ -9,19 +9,19 @@ Here is a little thumbnail gallery.
 
 
 **Action** | **Adventure** | **Animation**
-[![action](../assets/post5/thumbnails/Action.png)](https://poptcorn.github.io/assets/post5/fullsize/Action.jpg) | [![adventure](../assets/post5/thumbnails/Adventure.png)](https://poptcorn.github.io/assets/post5/fullsize/Adventure.jpg) | [![animation](../assets/post5/thumbnails/Animation.png)](https://poptcorn.github.io/assets/post5/fullsize/Animation.jpg)
+[![action](../assets/post5/thumbnails/Action.png)](../assets/post5/fullsize/Action.png) | [![adventure](../assets/post5/thumbnails/Adventure.png)](../assets/post5/fullsize/Adventure.png) | [![animation](../assets/post5/thumbnails/Animation.png)](../assets/post5/fullsize/Animation.png)
 **Comedy** | **Crime** | **Documentary**
-[![comedy](../assets/post5/thumbnails/Comedy.png)](../assets/post5/fullsize/Comedy.jpg) | [![crime](../assets/post5/thumbnails/Crime.png)](../assets/post5/fullsize/Crime.jpg) | [![documentary](../assets/post5/thumbnails/Documentary.png)](../assets/post5/fullsize/Documentary.jpg)
+[![comedy](../assets/post5/thumbnails/Comedy.png)](../assets/post5/fullsize/Comedy.png) | [![crime](../assets/post5/thumbnails/Crime.png)](../assets/post5/fullsize/Crime.png) | [![documentary](../assets/post5/thumbnails/Documentary.png)](../assets/post5/fullsize/Documentary.png)
 **Drama** | **Family** | **Fantasy**
-[![drama](../assets/post5/thumbnails/Drama.png)](../assets/post5/fullsize/Drama.jpg) | [![family](../assets/post5/thumbnails/Family.png)](../assets/post5/fullsize/Family.jpg) | [![fantasy](../assets/post5/thumbnails/Fantasy.png)](../assets/post5/fullsize/Fantasy.jpg)
+[![drama](../assets/post5/thumbnails/Drama.png)](../assets/post5/fullsize/Drama.png) | [![family](../assets/post5/thumbnails/Family.png)](../assets/post5/fullsize/Family.png) | [![fantasy](../assets/post5/thumbnails/Fantasy.png)](../assets/post5/fullsize/Fantasy.png)
 **Foreign** | **History** | **Horror**
-[![foreign](../assets/post5/thumbnails/Foreign.png)](../assets/post5/fullsize/Foreign.jpg) | [![history](../assets/post5/thumbnails/History.png)](../assets/post5/fullsize/History.jpg) | [![horror](../assets/post5/thumbnails/Horror.png)](../assets/post5/fullsize/Horror.jpg)
+[![foreign](../assets/post5/thumbnails/Foreign.png)](../assets/post5/fullsize/Foreign.png) | [![history](../assets/post5/thumbnails/History.png)](../assets/post5/fullsize/History.png) | [![horror](../assets/post5/thumbnails/Horror.png)](../assets/post5/fullsize/Horror.png)
 **Music** | **Mystery** | **Romance**
-[![music](../assets/post5/thumbnails/Music.png)](../assets/post5/fullsize/Music.jpg) | [![mystery](../assets/post5/thumbnails/Mystery.png)](../assets/post5/fullsize/Mystery.jpg) | [![romance](../assets/post5/thumbnails/Romance.png)](../assets/post5/fullsize/Romance.jpg)
+[![music](../assets/post5/thumbnails/Music.png)](../assets/post5/fullsize/Music.png) | [![mystery](../assets/post5/thumbnails/Mystery.png)](../assets/post5/fullsize/Mystery.png) | [![romance](../assets/post5/thumbnails/Romance.png)](../assets/post5/fullsize/Romance.png)
 **Science Fiction** | **Thriller** | **TV Movie**
-[![science fiction](../assets/post5/thumbnails/Science Fiction.png)](../assets/post5/fullsize/Science Fiction.jpg) | [![thriller](../assets/post5/thumbnails/Thriller.png)](../assets/post5/fullsize/Thriller.jpg) | [![tv movie](../assets/post5/thumbnails/TV Movie.png)](../assets/post5/fullsize/TV Movie.jpg)
+[![science fiction](../assets/post5/thumbnails/Science Fiction.png)](../assets/post5/fullsize/Science Fiction.png) | [![thriller](../assets/post5/thumbnails/Thriller.png)](../assets/post5/fullsize/Thriller.png) | [![tv movie](../assets/post5/thumbnails/TV Movie.png)](../assets/post5/fullsize/TV Movie.png)
 **War** | **Western**
-[![war](../assets/post5/thumbnails/War.png)](../assets/post5/fullsize/War.jpg) | [![western](../assets/post5/thumbnails/Western.png)](../assets/post5/fullsize/Western.jpg)
+[![war](../assets/post5/thumbnails/War.png)](../assets/post5/fullsize/War.png) | [![western](../assets/post5/thumbnails/Western.png)](../assets/post5/fullsize/Western.png)
 
 
 
