@@ -9,7 +9,7 @@ Here is a little thumbnail gallery.
 
 
 **Action** | **Adventure** | **Animation**
-[![action](../assets/post5/thumbnails/Action.png)](../assets/post5/fullsize/Action.jpg) | [![adventure](../assets/post5/thumbnails/Adventure.png)](../assets/post5/fullsize/Adventure.jpg) | [![animation](../assets/post5/thumbnails/Animation.png)](../assets/post5/fullsize/Animation.jpg)
+[![action](../assets/post5/thumbnails/Action.png)](https://poptcorn.github.io/assets/post5/fullsize/Action.jpg) | [![adventure](../assets/post5/thumbnails/Adventure.png)](https://poptcorn.github.io/assets/post5/fullsize/Adventure.jpg) | [![animation](../assets/post5/thumbnails/Animation.png)](https://poptcorn.github.io/assets/post5/fullsize/Animation.jpg)
 **Comedy** | **Crime** | **Documentary**
 [![comedy](../assets/post5/thumbnails/Comedy.png)](../assets/post5/fullsize/Comedy.jpg) | [![crime](../assets/post5/thumbnails/Crime.png)](../assets/post5/fullsize/Crime.jpg) | [![documentary](../assets/post5/thumbnails/Documentary.png)](../assets/post5/fullsize/Documentary.jpg)
 **Drama** | **Family** | **Fantasy**
@@ -28,7 +28,7 @@ Here is a little thumbnail gallery.
 
 ---
 ---
-I’d like to thank the themoviedb.org folks, who gave me access to their API which was relatively painless to use. I am not affiliated with them in any way and my opinions are my own. I’d also like to thank the developers and maintainers of: Python, word_cloud.
+I’d like to thank the themoviedb.org folks, who gave me access to their API which was relatively painless to use. I am not affiliated with them in any way and my opinions are my own. I’d also like to thank the developers and maintainers of: Python, word_cloud, and matplotlib.
 
 [themoviedb](https://www.themoviedb.org) | [python](https://www.python.org) | [word_cloud](https://www.github.com/amueller/word_cloud) | [matplotlib](https://www.matplotlib.org)
 ![the movie db](../assets/credit/tmdb.png) | ![python](../assets/credit/python.png) | ![word_cloud](../assets/credit/word_cloud.png) | ![matplotlib](../assets/credit/mpl.png)
